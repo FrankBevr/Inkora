@@ -54,3 +54,7 @@ FAQs
 - Technical support, yees
 - there is a hacker pack
 - team, if you want
+
+Question?
+
+- Send DM's like mad, they said so😝
