@@ -1,3 +1,5 @@
+> [Recording](https://youtu.be/JPW1JLqKNzY)
+
 - First Yasen
 - Then Emooji
 - Then Osun

@@ -1,3 +1,5 @@
+> [Recording](https://youtu.be/tBKJGcSJwdE)
+
 Definiton:
 
 A smart contract is a computer programm or a transaction protocoa ... wikipedia
