@@ -1,25 +1,30 @@
 ### Notes
 
-> ⚠️ youtube will come soon. 
+> [YT - LINK](https://www.youtube.com/watch?v=lHWbA4DBOFU) Build your Dapp with inkathon
+> [YT - Link](https://youtu.be/YanTJkn5aS8) AZERO - ID - INTERGRATION
 
 Use Cases
 
 - resovle domain -address
-...
+  ...
 
 azero.id inegration methods
+
 - frontend, js libary is available
 - contract, there is a rust crate
 
 first frontend.
+
 - there is just js, @zero-id/resolver-core
 - there is a react hook package, @azero-id/resolver-react
 - inkathon, is already implented.
 
 vanila
+
 ```js
 import {SupportedChain}
 ```
+
 ... I do a [picture](https://i.ibb.co/4KPVZ04/image.png).
 
 [react pictue integrateion](https://i.ibb.co/F7pq9sz/image.png)
@@ -35,9 +40,8 @@ Take a look in ink [hackerpack](https://encodeclub.notion.site/Polkadot-ink-Hack
 
 store profile imagine
 metadata
-settings, infromation store 
+settings, infromation store
 
 maybe account abstraction, start account id.
 
-url shortener. 
-
+url shortener.
