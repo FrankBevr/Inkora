@@ -1,0 +1,81 @@
+#+title: 18
+#+COLUMNS: %58ITEM(Task) %7TODO %6CLOCKSUM(Clock)
+
+* House Project
+
+** Hola
+** PROJ Build a house
+** TODO [#B] Build the basement [5/5] :Figma:
+DEADLINE: <2023-10-20 Fri>
+:LOGBOOK:
+CLOCK: [2023-10-20 Fri 19:36]--[2023-10-20 Fri 20:00] =>  0:24
+CLOCK: [2023-10-20 Fri 19:19]--[2023-10-20 Fri 19:22] =>  0:03
+- 0:00:17 :: CLOCK: [2023-10-20 Fri 19:16]--[2023-10-20 Fri 19:17] =>  0:01
+- 0:00:24 :: asdfasdf
+- 0:01:18 :: Ok thats a number
+:END:
+- [X] Hola
+- [X] Hola
+- [X] Hola
+- [X] Hola
+- [X] Ho
+la
+
+
+** TODO [#A] Build the ground floor :Frontend:
+** TODO Build the roof
+** TODO asdfasdf
+
+#+begin_quote
+Hola
+#+end_quote
+
+#+begin_src js
+console.log("Hola")
+const abc = 5 + 5;
+console.log(abc)
+#+end_src
+
+#+RESULTS:
+: Hola
+: 10
+
+* Thats a heading
+* PROJ [#A] Some Description [0/3] :ACoolTag:
+** TODO [#B] Some Description :ACoolerTag:
+- [ ] A todo Item
+- [ ] A todo Item
+- [ ] A todo Item
+** TODO [#B] Some Description :ACoolerTag:
+- A list Item
+- A list Item
+- A list Item
+** TODO [#B] Some Description :ACoolerTag:
+- A *bold* Item
+- A /italic/ Item
+- A _underline_ Item
+- A =verbatim= Item
+- A ~inlineCode~ Item
+- A +strikethrough+ Item
+** Thats a heading 2
+*** TODO [#C] Some Description [1/2] :ACoolTag:
+:LOGBOOK:
+CLOCK: [2023-10-20 Fri 20:00]--[2023-10-20 Fri 20:01] =>  0:01
+:END:
+- [ ] A todo thingie
+- [X] Now i clocked in
+*** Thats a heading 3
+
+
+
+* Lesson Learned again
+
+- There is PROJ TODO and other stuff
+- There is Priority
+- There is a title
+- There is perecentage
+- There are tags
+- There is DEADLINE
+- There is LOGBOOK for clocking
+- There are Tasks
+- There are interactive CodeBlocks
