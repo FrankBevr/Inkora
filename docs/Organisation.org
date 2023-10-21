@@ -1,0 +1,27 @@
+#+title: Organisation
+
+* Organisation
+
+** TODO [#A] Chunking
+1. TODO Write everything down what is in the head, Prioritise it, Make it nice
+
+*** Quick Breakdown
+
+Goal: Develop a web3ar Expierience
+- UI/UX
+- Frontend
+- Backend
+- SmartContract
+- 3D
+
+UI/UX:
+1. Colors
+2. Typography
+3. One Button
+4. UserFlow
+5. Wireframe
+6. One Card
+7. One Frame
+
+Frontend:
+1. ...
