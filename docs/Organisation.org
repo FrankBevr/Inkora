@@ -1,9 +1,14 @@
 #+title: Organisation
+#+COLUMNS: %58ITEM(Task) %7TODO %6CLOCKSUM(Clock)
 
 * Organisation
 
-** TODO [#A] Chunking
-1. TODO Write everything down what is in the head, Prioritise it, Make it nice
+** TODO [#A] Chunking [1/1]
+:LOGBOOK:
+CLOCK: [2023-10-21 Sat 12:44]--[2023-10-21 Sat 13:02] =>  0:18
+:END:
+- [X]  Write everything down what is in the head, Prioritise it, Make it nice.
+  - [X] Just ignore and write a step by step guide to get something running
 
 *** Quick Breakdown
 
@@ -24,4 +29,97 @@ UI/UX:
 7. One Frame
 
 Frontend:
-1. ...
+1. Create a HTML Page
+2. Start dev Server
+3. Write a heading, write a paragraph
+4. Write style to get red of default
+5. Add Canvas
+6. Draw a line via javascipt
+7. Declare Victory
+8. Add ThreeJS
+9. Show Cube in canvas
+10. Add MindAR
+11. Get Default Scene to run
+12. Add Button
+13. On Button Click change Background
+14. Declare Victory
+
+Backend:
+1. Create an app.js file
+2. Install express
+3. Serve a stupid json
+4. Got to frontend, fetch and console.log() json
+
+SmartContract:
+1. Create a ink Project
+2. Add storage to store count
+3. Add function to increase count
+4. Add function to get count
+5. start node and deploy contract
+6. call function via terminal
+7. call function via substrate ui
+8. Got to frontend, fetch and count
+9. Got to frontend, increase count
+10. Got to frontend, fetch and count
+
+3D:
+1. Open Blender
+2. Export Cube
+3. Save it
+
+
+** TODO [#A] Quick and Rough [0/5]
+:LOGBOOK:
+CLOCK: [2023-10-21 Sat 13:02]--[2023-10-21 Sat 13:17] =>  0:15
+:END:
+*** TODO [#C] UX/UX [0/7]
+:LOGBOOK:
+CLOCK: [2023-10-21 Sat 13:17]
+:END:
+- [ ]  Colors
+- [ ] Typography
+- [ ] One Button
+- [ ] UserFlow
+- [ ] Wireframe
+- [ ] One Card
+- [ ] One Frame
+*** TODO [#A] Frontend [0/14]
+- [ ] Create a HTML Page
+- [ ] Start dev Server
+- [ ] Write a heading, write a paragraph
+- [ ] Write style to get red of default
+- [ ] Add Canvas
+- [ ] Draw a line via javascipt
+- [ ] Declare Victory
+- [ ] Add ThreeJS
+- [ ] Show Cube in canvas
+- [ ] Add MindAR
+- [ ] Get Default Scene to run
+- [ ] Add Button
+- [ ] On Button Click change Background
+- [ ] Declare Victory
+*** TODO [#C] Backend [0/4]
+- [ ] Create an app.js file
+- [ ] Install express
+- [ ] Serve a stupid json
+- [ ] Got to frontend, fetch and console.log() json
+*** TODO [#A] SmartContract [0/9]
+- [ ] Create a ink Project
+- [ ] Add storage to store count
+- [ ] Add function to increase count
+- [ ] Add function to get count
+- [ ] start node and deploy contract
+- [ ] call function via terminal
+- [ ] call function via substrate ui
+- [ ] Got to frontend, fetch and count
+- [ ] Got to frontend, increase count
+- [ ]. Got to frontend, fetch and count
+*** TODO [#C] 3D [0/3]
+- [ ] Open Blender
+- [ ] Export Cube
+- [ ] Save it
+
+*** TODO [#C] Diverse [0/3]
+- [ ] Document Day
+- [ ] Add it to Vitepress
+- [ ] publish it
