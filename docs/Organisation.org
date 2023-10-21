@@ -72,17 +72,34 @@ SmartContract:
 :LOGBOOK:
 CLOCK: [2023-10-21 Sat 13:02]--[2023-10-21 Sat 13:17] =>  0:15
 :END:
-*** TODO [#C] UX/UX [0/7]
+*** TODO [#C] UX/UX [4/8]
 :LOGBOOK:
-CLOCK: [2023-10-21 Sat 13:17]
+CLOCK: [2023-10-21 Sat 18:59]--[2023-10-21 Sat 20:52] =>  1:53
+CLOCK: [2023-10-21 Sat 18:03]--[2023-10-21 Sat 18:50] =>  0:47
+CLOCK: [2023-10-21 Sat 15:00]--[2023-10-21 Sat 15:25] =>  0:25
+CLOCK: [2023-10-21 Sat 14:46]--[2023-10-21 Sat 14:59] =>  0:13
+CLOCK: [2023-10-21 Sat 14:05]--[2023-10-21 Sat 14:42] =>  0:37
+CLOCK: [2023-10-21 Sat 13:17]--[2023-10-21 Sat 13:22] =>  0:05
 :END:
-- [ ]  Colors
-- [ ] Typography
-- [ ] One Button
+- [X] Colors
+  - [X] Set Up Komorebic for Quick Switching
+  - [X] Create new Figma File
+  - [X] use coolors.io
+  - [X] create minimal colorschema
+- [X] Typography
+  - [X] Create Frame
+  - [X] Create Heading, Paragraph, Bold, Italic
+  - [X] Add AutoLayout
+  - [X] Add AutoLayout of Colors
+  - [X] Add Variations of Colors
+  - [X] Add Icon Page
+  - [X] Set Styles to FigFile
+- [X] One Button
 - [ ] UserFlow
 - [ ] Wireframe
 - [ ] One Card
 - [ ] One Frame
+- [X] Export a pdf Design System, minimalistic
 *** TODO [#A] Frontend [0/14]
 - [ ] Create a HTML Page
 - [ ] Start dev Server
