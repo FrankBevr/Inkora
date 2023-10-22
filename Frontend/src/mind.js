@@ -23,7 +23,7 @@ const mind = () => {
 
     mindarThree = new MindARThree({
       container: document.querySelector("#container"),
-      imageTargetSrc: "./assets/card-example/card.mind",
+      imageTargetSrc: "/card.mind",
       filterMinCF: 1,
       filterBeta: 10000,
       missTolerance: 0,
