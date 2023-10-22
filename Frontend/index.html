@@ -28,12 +28,22 @@
       canvas.style.background = "red";
 
       const ctx = canvas.getContext("2d");
-      ctx.beginPath();
-      ctx.moveTo(0, 0);
-      ctx.lineTo(400, 400);
-      ctx.strokeStyle = "black";
-      ctx.stroke();
-      console.log(canvas);
+      let yPos = 0;
+      let direction = 1;
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.beginPath();
+        ctx.moveTo(0, yPos);
+        ctx.lineTo(400, yPos);
+        ctx.strokeStyle = "black";
+        ctx.stroke();
+        yPos += direction;
+        if (yPos >= canvas.height || yPos <= 0) {
+          direction *= -1;
+        }
+        requestAnimationFrame(animate);
+      }
+      animate();
     </script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap");

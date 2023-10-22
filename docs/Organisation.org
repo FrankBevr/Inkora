@@ -100,7 +100,7 @@ CLOCK: [2023-10-21 Sat 13:17]--[2023-10-21 Sat 13:22] =>  0:05
 - [ ] One Card
 - [ ] One Page
 - [X] Export a pdf Design System, minimalistic
-*** TODO [#A] Frontend [6/14]
+*** TODO [#A] Frontend [8/15]
 :LOGBOOK:
 CLOCK: [2023-10-22 Sun 09:43]
 CLOCK: [2023-10-22 Sun 08:33]--[2023-10-22 Sun 09:30] =>  0:57
@@ -112,8 +112,8 @@ CLOCK: [2023-10-22 Sun 08:13]--[2023-10-22 Sun 08:32] =>  0:19
 - [X] Write style to get red of default
 - [X] Add Canvas
 - [X] Draw a line via javascipt
-- [ ] Add tiny animation
-- [ ] Declare Victory
+- [X] Add tiny animation
+- [X] Declare Victory
 - [ ] Add ThreeJS
 - [ ] Show Cube in canvas
 - [ ] Add MindAR
