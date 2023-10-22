@@ -126,13 +126,13 @@ CLOCK: [2023-10-22 Sun 08:13]--[2023-10-22 Sun 08:32] =>  0:19
 - [X] Get Default Scene to run
 - [X] Add Button
 - [X] Declare Victory
-*** TODO [#C] Backend [2/4]
+*** TODO [#C] Backend [3/4]
 :LOGBOOK:
 CLOCK: [2023-10-22 Sun 19:46]--[2023-10-22 Sun 19:56] =>  0:10
 :END:
 - [X] Create an app.js file
 - [X] Install express
-- [ ] Serve a stupid json
+- [X] Serve a stupid json
 - [ ] Got to frontend, fetch and console.log() json
 *** TODO [#A] SmartContract [0/9]
 - [ ] Create a ink Project
