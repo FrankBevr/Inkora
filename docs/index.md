@@ -1,5 +1,4 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
@@ -9,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: Read the Journey
-      link: /Notes-LaunchEvent
+      link: /Notes/markdown-examples
     - theme: alt
       text: See the Moe's Taverne
-      link: /markdown-example
+      link: /Notes/markdown-examples
 
 features:
   - title: Feature A

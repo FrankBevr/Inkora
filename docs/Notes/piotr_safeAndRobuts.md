@@ -20,10 +20,10 @@ Aleph Zero
 
 - [alephzero.org](www.alephzero.org)
 - [docs.alephzero.org](www.docs.alephzero.org)
-- [alephzero.org/developers](www.alephzero.org/developers)
+- [alephzero.org/developers](https://alephzero.org/developers)
 - [test.azero.dev](www.test.azero.dev)
 - [contracts-ui.substrate.io](www.contracts-ui.substrate.io)
-- [polkadot.js.org/docs/api](www.polkadot.js.org/docs/api)
+- [polkadot.js.org/docs/api](https://polkadot.js.org/docs/api)
 
 Why ink?
 

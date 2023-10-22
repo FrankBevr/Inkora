@@ -4,6 +4,7 @@ export default {
   themeConfig: {
     nav: [{ text: "Home", link: "/" }],
     logo: "https://use.ink/assets/files/ink-squink-129208fde8d6d4a8474bf71865e3d76b.svg",
+    ignoreDeadLinks: true,
     sidebar: [
       {
         text: "The Beginning",

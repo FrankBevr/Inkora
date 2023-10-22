@@ -134,23 +134,32 @@ CLOCK: [2023-10-22 Sun 19:46]--[2023-10-22 Sun 19:56] =>  0:10
 - [X] Install express
 - [X] Serve a stupid json
 - [ ] Got to frontend, fetch and console.log() json
-*** TODO [#A] SmartContract [0/9]
-- [ ] Create a ink Project
-- [ ] Add storage to store count
-- [ ] Add function to increase count
-- [ ] Add function to get count
-- [ ] start node and deploy contract
-- [ ] call function via terminal
-- [ ] call function via substrate ui
-- [ ] Got to frontend, fetch and count
-- [ ] Got to frontend, increase count
-- [ ]. Got to frontend, fetch and count
-*** TODO [#C] 3D [0/3]
-- [ ] Open Blender
-- [ ] Export Cube
-- [ ] Save it
+*** TODO [#A] SmartContract [7/9]
+:LOGBOOK:
+CLOCK: [2023-10-22 Sun 20:45]--[2023-10-22 Sun 21:46] =>  1:01
+:END:
+- [X] Create a ink Project
+- [X] Add storage to store count
+- [X] Add function to flip value
+- [X] Add function to get value
+- [X] start node and deploy contract
+- [X] call function via terminal
+- [X] call function via substrate ui
+- [ ] Go to frontend, fetch value
+- [ ] Go to frontend, increase flip value
+*** TODO [#C] 3D [3/3]
+:LOGBOOK:
+CLOCK: [2023-10-22 Sun 21:49]--[2023-10-22 Sun 21:52] =>  0:03
+:END:
+- [X] Open Blender
+- [X] Export Cube
+- [X] Save it
 
-*** TODO [#C] Diverse [0/3]
-- [ ] Document Day
-- [ ] Add it to Vitepress
-- [ ] publish it
+*** TODO [#C] Diverse [3/3]
+:LOGBOOK:
+CLOCK: [2023-10-22 Sun 23:42]--[2023-10-22 Sun 23:54] =>  0:12
+CLOCK: [2023-10-22 Sun 21:53]--[2023-10-22 Sun 23:38] =>  1:45
+:END:
+- [X] Document Day
+- [X] Add it to Vitepress
+- [X] Publish it
