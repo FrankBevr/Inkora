@@ -20,6 +20,21 @@
       excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco
       ut ea consectetur et est culpa et culpa duis.
     </p>
+    <canvas></canvas>
+    <script>
+      const canvas = document.querySelector("canvas");
+      canvas.width = 400;
+      canvas.height = 400;
+      canvas.style.background = "red";
+
+      const ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.lineTo(400, 400);
+      ctx.strokeStyle = "black";
+      ctx.stroke();
+      console.log(canvas);
+    </script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap");
       @import url("https://fonts.cdnfonts.com/css/futura-lt");
