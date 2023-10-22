@@ -8,6 +8,7 @@ body {
   color: #e8f1f2;
   background-color: #22162b;
   font-family: "Futura LT", sans-serif;
+  overflow: hidden;
 }
 h1 {
   font-family: "Unbounded", sans-serif;
@@ -25,4 +26,17 @@ p {
   font-weight: 400;
   line-height: 120%;
   letter-spacing: 0.03rem;
+}
+#container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }

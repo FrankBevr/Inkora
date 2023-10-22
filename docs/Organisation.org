@@ -100,9 +100,10 @@ CLOCK: [2023-10-21 Sat 13:17]--[2023-10-21 Sat 13:22] =>  0:05
 - [ ] One Card
 - [ ] One Page
 - [X] Export a pdf Design System, minimalistic
-*** TODO [#A] Frontend [13/18]
+*** TODO [#A] Frontend [14/18]
 :LOGBOOK:
-CLOCK: [2023-10-22 Sun 09:43]
+CLOCK: [2023-10-22 Sun 10:58]
+CLOCK: [2023-10-22 Sun 09:43]--[2023-10-22 Sun 10:42] =>  0:59
 CLOCK: [2023-10-22 Sun 08:33]--[2023-10-22 Sun 09:30] =>  0:57
 CLOCK: [2023-10-22 Sun 08:13]--[2023-10-22 Sun 08:32] =>  0:19
 :END:
@@ -119,7 +120,8 @@ CLOCK: [2023-10-22 Sun 08:13]--[2023-10-22 Sun 08:32] =>  0:19
 - [X] Show Cube in canvas
 - [X] modularize Code
 - [X] Animate Cube
-- [ ] Add MindAR
+- [X] Add MindAR
+- [X] Fix Chrome Camera
 - [ ] Get Default Scene to run
 - [ ] Add Button
 - [ ] On Button Click change Background
