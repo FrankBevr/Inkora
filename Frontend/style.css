@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap");
+@import url("https://fonts.cdnfonts.com/css/futura-lt");
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #e8f1f2;
+  background-color: #22162b;
+  font-family: "Futura LT", sans-serif;
+}
+h1 {
+  font-family: "Unbounded", sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+}
+h2 {
+  font-family: "Unbounded", sans-serif;
+  font-size: 28px;
+  font-weight: 200;
+}
+p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.03rem;
+}

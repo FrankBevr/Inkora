@@ -114,6 +114,7 @@ CLOCK: [2023-10-22 Sun 08:13]--[2023-10-22 Sun 08:32] =>  0:19
 - [X] Draw a line via javascipt
 - [X] Add tiny animation
 - [X] Declare Victory
+- [ ] refactor it, split files
 - [ ] Add ThreeJS
 - [ ] Show Cube in canvas
 - [ ] Add MindAR

@@ -4,6 +4,7 @@
     <title></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <h1>Inkora</h1>
@@ -21,59 +22,6 @@
       ut ea consectetur et est culpa et culpa duis.
     </p>
     <canvas></canvas>
-    <script>
-      const canvas = document.querySelector("canvas");
-      canvas.width = 400;
-      canvas.height = 400;
-      canvas.style.background = "red";
-
-      const ctx = canvas.getContext("2d");
-      let yPos = 0;
-      let direction = 1;
-      function animate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.beginPath();
-        ctx.moveTo(0, yPos);
-        ctx.lineTo(400, yPos);
-        ctx.strokeStyle = "black";
-        ctx.stroke();
-        yPos += direction;
-        if (yPos >= canvas.height || yPos <= 0) {
-          direction *= -1;
-        }
-        requestAnimationFrame(animate);
-      }
-      animate();
-    </script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap");
-      @import url("https://fonts.cdnfonts.com/css/futura-lt");
-      *,
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        color: #e8f1f2;
-        background-color: #22162b;
-        font-family: "Futura LT", sans-serif;
-      }
-      h1 {
-        font-family: "Unbounded", sans-serif;
-        font-size: 40px;
-        font-weight: 200;
-      }
-      h2 {
-        font-family: "Unbounded", sans-serif;
-        font-size: 28px;
-        font-weight: 200;
-      }
-      p {
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 120%;
-        letter-spacing: 0.03rem;
-      }
-    </style>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
