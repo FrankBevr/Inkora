@@ -100,14 +100,15 @@ CLOCK: [2023-10-21 Sat 13:17]--[2023-10-21 Sat 13:22] =>  0:05
 - [ ] One Card
 - [ ] One Page
 - [X] Export a pdf Design System, minimalistic
-*** TODO [#A] Frontend [0/14]
+*** TODO [#A] Frontend [4/14]
 :LOGBOOK:
+CLOCK: [2023-10-22 Sun 08:33]
 CLOCK: [2023-10-22 Sun 08:13]--[2023-10-22 Sun 08:32] =>  0:19
 :END:
-- [ ] Create a HTML Page
-- [ ] Start dev Server
-- [ ] Write a heading, write a paragraph
-- [ ] Write style to get red of default
+- [X] Create a HTML Page
+- [X] Start dev Server
+- [X] Write a heading, write a paragraph
+- [X] Write style to get red of default
 - [ ] Add Canvas
 - [ ] Draw a line via javascipt
 - [ ] Declare Victory
