@@ -1,8 +1,7 @@
 import * as THREE from "three";
-import { MindARThree } from "mind-ar/dist/mindar-image-three.prod";
+import { MindARThree } from "mind-ar/dist/mindar-image-three.prod.js";
 
 const mind = () => {
-  console.log("Here I am");
   const frontCameraDeviceSelect = document.querySelector(
     "#frontCameraDeviceSelect",
   );
