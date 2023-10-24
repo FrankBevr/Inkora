@@ -3,7 +3,7 @@
 
 * Organisation
 
-** TODO [#A] Chunking [1/1]
+** DONE [#A] Chunking [1/1]
 :LOGBOOK:
 CLOCK: [2023-10-21 Sat 12:44]--[2023-10-21 Sat 13:02] =>  0:18
 :END:
@@ -68,7 +68,7 @@ SmartContract:
 3. Save it
 
 
-** TODO [#A] Quick and Rough [0/5]
+** TODO [#A] Quick and Rough [4/8]
 :LOGBOOK:
 CLOCK: [2023-10-21 Sat 13:02]--[2023-10-21 Sat 13:17] =>  0:15
 :END:
@@ -100,7 +100,7 @@ CLOCK: [2023-10-21 Sat 13:17]--[2023-10-21 Sat 13:22] =>  0:05
 - [ ] One Card
 - [ ] One Page
 - [X] Export a pdf Design System, minimalistic
-*** TODO [#A] Frontend [18/18]
+*** DONE [#A] Frontend [18/18]
 :LOGBOOK:
 CLOCK: [2023-10-22 Sun 16:58]--[2023-10-22 Sun 18:59] =>  2:01
 CLOCK: [2023-10-22 Sun 10:58]--[2023-10-22 Sun 12:36] =>  1:38
@@ -147,7 +147,7 @@ CLOCK: [2023-10-22 Sun 20:45]--[2023-10-22 Sun 21:46] =>  1:01
 - [X] call function via substrate ui
 - [ ] Go to frontend, fetch value
 - [ ] Go to frontend, increase flip value
-*** TODO [#C] 3D [3/3]
+*** DONE [#C] 3D [3/3]
 :LOGBOOK:
 CLOCK: [2023-10-22 Sun 21:49]--[2023-10-22 Sun 21:52] =>  0:03
 :END:
@@ -155,7 +155,7 @@ CLOCK: [2023-10-22 Sun 21:49]--[2023-10-22 Sun 21:52] =>  0:03
 - [X] Export Cube
 - [X] Save it
 
-*** TODO [#C] Diverse [3/3]
+*** DONE [#C] Diverse [3/3]
 :LOGBOOK:
 CLOCK: [2023-10-22 Sun 23:42]--[2023-10-22 Sun 23:54] =>  0:12
 CLOCK: [2023-10-22 Sun 21:53]--[2023-10-22 Sun 23:38] =>  1:45
@@ -163,3 +163,26 @@ CLOCK: [2023-10-22 Sun 21:53]--[2023-10-22 Sun 23:38] =>  1:45
 - [X] Document Day
 - [X] Add it to Vitepress
 - [X] Publish it
+
+*** DONE [#A] Repair PC [11/11]
+- [X] WLan Drive Broken, repair it
+- [X] Doesn work, reset pc with keeping filex
+- [X] Get hearattack, when realise that wsl is deinstalled
+- [X] Get old XP Laptop running
+- [X] Download Puppy OS
+- [X] Boot from USB Stick
+- [X] Connect via Lan and share working Wifi
+- [X] Find Seedphrased to wallets
+- [X] Set up PC
+- [X] Set up Dev enviorment
+- [X] Back on Track, drink a Tea
+
+*** TODO [#A] Finish steps before add Steps
+- [ ] UserFlow
+- [ ] Wireframe
+- [ ] One Card
+- [ ] One Page
+- [ ] Got to frontend, fetch and console.log() json
+- [ ] Go to frontend, fetch value
+- [ ] Go to frontend, increase flip value
+- [ ] Get React working with MindAR
