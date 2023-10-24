@@ -1,0 +1,6 @@
+[submodule "playground/playground/mind-ar-js-react"]
+	path = playground/playground/mind-ar-js-react
+	url = https://github.com/hiukim/mind-ar-js-react.git
+[submodule "playground/mind-ar-js-react"]
+	path = playground/mind-ar-js-react
+	url = https://github.com/hiukim/mind-ar-js-react.git
