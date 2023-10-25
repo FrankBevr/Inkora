@@ -1,5 +1,8 @@
 import { useWallet, useAllWallets } from "useink";
-import metadata from "./moes_coaster.json";
+// import { useContract } from "useink";
+// import metadata from "./moes_coaster.json";
+// const CONTRACT_ADDRESS = "5GV5ZnPynJBjYXWXExsmVdQgdrePFXDfPy4CkEv7w5nssY7n";
+// const contract = useContract(CONTRACT_ADDRESS, metadata);
 
 const FetchSmartContract = () => {
   const { account, connect, disconnect } = useWallet();
@@ -8,15 +11,23 @@ const FetchSmartContract = () => {
     return (
       <ul>
         {wallets.map((w) => (
-          <li key={w.title}>
+          <li key={w.title} style={{ listStyle: "none" }}>
             {w.installed ? (
               <button onClick={() => connect(w.extensionName)}>
-                <img src={w.logo.src} alt={w.logo.alt} />
+                <img
+                  src={w.logo.src}
+                  style={{ width: 20, height: 20 }}
+                  alt={w.logo.alt}
+                />
                 Connect to {w.title}
               </button>
             ) : (
               <a href={w.installUrl}>
-                <img src={w.logo.src} alt={w.logo.alt} />
+                <img
+                  src={w.logo.src}
+                  style={{ width: 20, height: 20 }}
+                  alt={w.logo.alt}
+                />
                 Install {w.title}
               </a>
             )}
@@ -25,9 +36,6 @@ const FetchSmartContract = () => {
       </ul>
     );
   }
-
-  const CONTRACT_ADDRESS = "..";
-  const contract = useContract(CONTRACT_ADDRESS, metadata);
   return (
     <>
       <h1>Hello FetchSmartContract</h1>;
