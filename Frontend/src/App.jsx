@@ -15,7 +15,6 @@ const LocalChain = {
 
 const App = () => {
   const [started, setStarted] = useState(null);
-  console.log(MyChain)
 
   return (
     <UseInkProvider
