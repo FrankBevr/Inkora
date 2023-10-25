@@ -8,26 +8,29 @@ On these kinds of Projects I chunk them usually. Take a piece of time that i lik
 Before I start try to particpates on Workshops with the hope I learn something which i was not aware of it.
 Thats always the case, so declaring victory is already set in stone. 🏆
 
+:::details Recap - Details
+
 ### Recap
 
-1. I reorganised the current Repo
-2. Add Vitepress to make a easy BackUp if something goes wrong.
-3. I recap features of .org Files 
-4. I add Organisation.org
-5. I wrote down a rough roadmap to get something running
-6. I chunk the Roadmap down in smaller parts
-7. I start with one, Figma(UI/UX)
-8. I choose a Colorshema
-9. I choose a Typography combination
-10. I created Figma Style for consitency and easy access
-11. I created one button
-12. I refactor the Button into a Figma Component
-13. I created a Design Document to get a commit under the Belt
-14. I tracked my time via the Organisation.org
+- [x] I reorganised the current Repo
+- [x] Add Vitepress to make a easy BackUp if something goes wrong.
+- [x] I recap features of .org Files 
+- [x] I add Organisation.org
+- [x] I wrote down a rough roadmap to get something running
+- [x] I chunk the Roadmap down in smaller parts
+- [x] I start with one, Figma(UI/UX)
+- [x] I choose a Colorshema
+- [x] I choose a Typography combination
+- [x] I created Figma Style for consitency and easy access
+- [x] I created one button
+- [x] I refactor the Button into a Figma Component
+- [x] I created a Design Document to get a commit under the Belt
+- [x] I tracked my time via the Organisation.org
 
-### Outro 
+:::
 
-Summa Summarum: 
+### Summa Summarum
+
 - Added Organisation 
 - Setted Up Figma 
 - Added Design System,

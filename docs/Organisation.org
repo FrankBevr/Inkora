@@ -178,6 +178,12 @@ CLOCK: [2023-10-22 Sun 21:53]--[2023-10-22 Sun 23:38] =>  1:45
 - [X] Back on Track, drink a Tea
 
 *** TODO [#A] Finish steps before add Steps
+:LOGBOOK:
+CLOCK: [2023-10-24 Tue 19:02]--[2023-10-25 Wed 01:58] =>  6:56
+CLOCK: [2023-10-24 Tue 16:03]--[2023-10-24 Tue 17:01] =>  0:58
+CLOCK: [2023-10-24 Tue 10:43]--[2023-10-24 Tue 11:20] =>  0:37
+CLOCK: [2023-10-24 Tue 09:14]--[2023-10-24 Tue 10:21] =>  1:07
+:END:
 - [ ] UserFlow
 - [ ] Wireframe
 - [ ] One Card
@@ -186,3 +192,21 @@ CLOCK: [2023-10-22 Sun 21:53]--[2023-10-22 Sun 23:38] =>  1:45
 - [ ] Go to frontend, fetch value
 - [ ] Go to frontend, increase flip value
 - [ ] Get React working with MindAR
+- [X] Explore MindAR React example, add it to playground
+- [ ] Install right dependencies
+- [X] Make food for guests
+- [X] Help somewhere out
+- [X] felt demotiviated, no much progress
+- [X] help friend to improve his project
+  - [X] get truffle correctly running
+  - [X] write migration script
+  - [X] write tests
+  - [X] use of truffle console
+  - [X] create frontend thingy
+  - [X] create div for blocknumber updater
+  - [X] create div for contract deployment via form
+  - [X] create div for call contract
+  - [X] modularize it
+  - [X] create footer and header
+  - [X] call it a day
+- [X] sleepy and more motivated for Wednesday

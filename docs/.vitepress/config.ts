@@ -1,3 +1,5 @@
+import { taskLists } from '@hedgedoc/markdown-it-plugins'
+
 export default {
   title: "Inkora",
   description: "Moe's Taverne",
@@ -18,6 +20,7 @@ export default {
           { text: "Saturday", link: "/Journey/Saturday" },
           { text: "Sunday", link: "/Journey/Sunday" },
           { text: "Monday", link: "/Journey/Monday" },
+          { text: "Tuesday", link: "/Journey/Tuesday" },
         ],
       },
       {
@@ -48,4 +51,9 @@ export default {
       { icon: "github", link: "https://github.com/frankbevr/inkora" },
     ],
   },
-};
+  markdown: {
+    config: (md) => {
+      md.use(taskLists, {enabled: true, label: true, lineNumber: true})
+    }
+  }
+}

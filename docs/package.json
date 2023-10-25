@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.23"
+    "markdown-it": "^13.0.2",
+    "@hedgedoc/markdown-it-plugins": "^2.1.4",
+    "vitepress": "^1.0.0-rc.24"
   },
   "dependencies": {
     "vue": "^3.3.6"

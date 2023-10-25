@@ -12,19 +12,19 @@ Then I rambled around and fix it.
 #### Recap
 
 `./docs`
-- Add Monday.md
-- Update Organisation.org, Repair PC
-    - WLan Drive Broken, repair it
-    - Doesn work, reset pc with keeping filex
-    - Get hearattack, when realise that wsl is deinstalled
-    - Get old XP Laptop running
-    - Download Puppy OS
-    - Boot from USB Stick
-    - Connect via Lan and share working Wifi
-    - Find Seedphrased to wallets
-    - Set up PC
-    - Set up Dev enviorment
-    - Back on Track, drink a Tea
+- [x] Add Monday.md
+- [x]Update Organisation.org, Repair PC
+    - [x] WLan Drive Broken, repair it
+    - [x] Doesn work, reset pc with keeping filex
+    - [x] Get hearattack, when realise that wsl is deinstalled
+    - [x] Get old XP Laptop running
+    - [x] Download Puppy OS
+    - [x] Boot from USB Stick
+    - [x] Connect via Lan and share working Wifi
+    - [x] Find Seedphrased to wallets
+    - [x] Set up PC
+    - [x] Set up Dev enviorment
+    - [x] Back on Track, drink a Tea
 
 :::
 

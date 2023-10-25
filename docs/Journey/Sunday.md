@@ -9,45 +9,45 @@ Today it went a bit more smooth.
 
 `./frontend`
 
-- Create a HTML Page
-- Start dev Server
-- Write a heading, write a paragraph
-- Write style to get red of default
-- Add Canvas
-- Draw a line via javascipt
-- Add tiny animation
-- Declare Victory
-- refactor it, split files
-- Add ThreeJS
-- Show Cube in canvas
-- modularize Code
-- Animate Cube
-- Add MindAR
-- Fix Chrome Camera
-- Get Default Scene to run
-- Add Button
+- [x] Create a HTML Page
+- [x] Start dev Server
+- [x] Write a heading, write a paragraph
+- [x] Write style to get red of default
+- [x] Add Canvas
+- [x] Draw a line via javascipt
+- [x] Add tiny animation
+- [x] Declare Victory
+- [x] refactor it, split files
+- [x] Add ThreeJS
+- [x] Show Cube in canvas
+- [x] modularize Code
+- [x] Animate Cube
+- [x] Add MindAR
+- [x] Fix Chrome Camera
+- [x] Get Default Scene to run
+- [x] Add Button
 
 `./Backend`
 
-- Create an app.js file
-- Install express
-- Serve a stupid json
+- [x] Create an app.js file
+- [x] Install express
+- [x] Serve a stupid json
 
 `./Smartcontract`
 
-- Create a ink Project
-- Add storage to store coun
-- Add function to flip value
-- Add function to get value
-- start node and deploy contract
-- call function via terminal
-- call function via substrate ui
+- [x] Create a ink Project
+- [x] Add storage to store coun
+- [x] Add function to flip value
+- [x] Add function to get value
+- [x] start node and deploy contract
+- [x] call function via terminal
+- [x] call function via substrate ui
 
 `./3D`
 
-- Open Blender
-- Export Cube
-- Save it
+- [x] Open Blender
+- [x] Export Cube
+- [x] Save it
 
 `Still todo`
 
