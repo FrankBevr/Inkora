@@ -1,20 +1,34 @@
-import { useEffect } from "react"
+
+import { useEffect, useRef, useState } from "react";
 
 const FetchBackend = () => {
+  const [backendData, setBackendData] = useState({});
+  const title = useRef();
+
   useEffect(() => {
     async function fetcho() {
       try {
-        const res = await fetch("http://localhost:3000/api")
-        const data = await res.json()
-        console.log(data)
+        const res = await fetch("http://localhost:3000/api");
+        const data = await res.json();
+        setBackendData(data);
       } catch (error) {
-        console.error(error)
+        console.error(error);
       }
     }
-    fetcho()
+    fetcho();
+  }, []);
 
-  }, [])
-  return <h1>FetchBackend</h1>
-}
+  return (
+    <div style={{border: "2px solid green", margin: 20, borderRadius: 10 }}>
+      <h1>FetchBackend - Component</h1>
+      <h2>Title:</h2>
+      <p>{backendData.title}</p>
+      <h2>Why:</h2> 
+      <p>{backendData.why}</p>
+      <h2>inUse:</h2>
+      <p>{backendData.inUse ? "true" : "false"}</p>
+    </div>
+  );
+};
 
-export default FetchBackend
+export default FetchBackend;
