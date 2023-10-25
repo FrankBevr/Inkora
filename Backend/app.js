@@ -1,6 +1,8 @@
 import express from "express";
+import cors from "cors"
 
 const app = express();
+app.use(cors())
 
 app.get("/api", (req, res) => {
   const backy = {
@@ -9,7 +11,7 @@ app.get("/api", (req, res) => {
     inUse: false,
   };
 
-  res.json(backy);
+  res.json(backy)
 });
 
 app.listen(3000, () => {

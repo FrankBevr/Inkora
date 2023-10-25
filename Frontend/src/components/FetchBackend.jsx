@@ -1,12 +1,15 @@
 import { useEffect } from "react"
-import axios from "axios";
 
 const FetchBackend = () => {
   useEffect(() => {
     async function fetcho() {
-      fetch("http://localhost:3000/api", { mode: "no-cors" }).then((res) => {
-        res.json().then(data => { console.log(data) })
-      })
+      try {
+        const res = await fetch("http://localhost:3000/api")
+        const data = await res.json()
+        console.log(data)
+      } catch (error) {
+        console.error(error)
+      }
     }
     fetcho()
 
