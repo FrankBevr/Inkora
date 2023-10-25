@@ -177,8 +177,10 @@ CLOCK: [2023-10-22 Sun 21:53]--[2023-10-22 Sun 23:38] =>  1:45
 - [X] Set up Dev enviorment
 - [X] Back on Track, drink a Tea
 
-*** TODO [#A] Finish steps before add Steps
+*** TODO [#A] Finish steps before add Steps [12/19]
 :LOGBOOK:
+CLOCK: [2023-10-25 Wed 09:08]--[2023-10-25 Wed 12:16] =>  3:08
+CLOCK: [2023-10-25 Wed 07:32]--[2023-10-25 Wed 08:55] =>  1:23
 CLOCK: [2023-10-24 Tue 19:02]--[2023-10-25 Wed 01:58] =>  6:56
 CLOCK: [2023-10-24 Tue 16:03]--[2023-10-24 Tue 17:01] =>  0:58
 CLOCK: [2023-10-24 Tue 10:43]--[2023-10-24 Tue 11:20] =>  0:37
@@ -191,9 +193,9 @@ CLOCK: [2023-10-24 Tue 09:14]--[2023-10-24 Tue 10:21] =>  1:07
 - [ ] Got to frontend, fetch and console.log() json
 - [ ] Go to frontend, fetch value
 - [ ] Go to frontend, increase flip value
-- [ ] Get React working with MindAR
+- [X] Get React working with MindAR
 - [X] Explore MindAR React example, add it to playground
-- [ ] Install right dependencies
+- [X] Install right dependencies
 - [X] Make food for guests
 - [X] Help somewhere out
 - [X] felt demotiviated, no much progress
@@ -210,3 +212,9 @@ CLOCK: [2023-10-24 Tue 09:14]--[2023-10-24 Tue 10:21] =>  1:07
   - [X] create footer and header
   - [X] call it a day
 - [X] sleepy and more motivated for Wednesday
+- [X] write Tuesday.md
+- [X] add bullet points to vitepress
+- [X] try to reproduce react mind ar repo
+- [X] comment github issue on tresjs
+- [ ] debug fetch, because of wsl 
+- [ ] try to port it to windows
