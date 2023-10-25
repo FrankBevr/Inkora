@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import MindARThreeViewer from './mindar-three-viewer';
+import FetchBackend from './components/FetchBackend.jsx'
 
 function App() {
   const [started, setStarted] = useState(null);
@@ -19,6 +20,7 @@ function App() {
           <MindARThreeViewer />
         </div>
       )}
+    <FetchBackend/>
     </div>
   );
 }
