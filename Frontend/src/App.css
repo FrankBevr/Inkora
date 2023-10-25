@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+.control-buttons {
+  position: relative;
+  z-index: 1000;
+}
+
+.container {
+  margin: 20px auto;
+  position: relative;
+  height: 300px;
+  width: 600px;
+  overflow: hidden;
+}
