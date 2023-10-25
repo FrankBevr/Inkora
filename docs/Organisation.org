@@ -126,14 +126,14 @@ CLOCK: [2023-10-22 Sun 08:13]--[2023-10-22 Sun 08:32] =>  0:19
 - [X] Get Default Scene to run
 - [X] Add Button
 - [X] Declare Victory
-*** TODO [#C] Backend [3/4]
+*** DONE [#C] Backend [4/4]
 :LOGBOOK:
 CLOCK: [2023-10-22 Sun 19:46]--[2023-10-22 Sun 19:56] =>  0:10
 :END:
 - [X] Create an app.js file
 - [X] Install express
 - [X] Serve a stupid json
-- [ ] Got to frontend, fetch and console.log() json
+- [X] Got to frontend, fetch and console.log() json
 *** TODO [#A] SmartContract [7/9]
 :LOGBOOK:
 CLOCK: [2023-10-22 Sun 20:45]--[2023-10-22 Sun 21:46] =>  1:01
@@ -177,8 +177,14 @@ CLOCK: [2023-10-22 Sun 21:53]--[2023-10-22 Sun 23:38] =>  1:45
 - [X] Set up Dev enviorment
 - [X] Back on Track, drink a Tea
 
-*** TODO [#A] Finish steps before add Steps [12/19]
+*** TODO [#A] Finish steps before add Steps [23/29]
 :LOGBOOK:
+CLOCK: [2023-10-25 Wed 20:25]
+CLOCK: [2023-10-25 Wed 20:04]--[2023-10-25 Wed 20:15] =>  0:11
+CLOCK: [2023-10-25 Wed 18:01]--[2023-10-25 Wed 18:43] =>  0:42
+CLOCK: [2023-10-25 Wed 17:23]--[2023-10-25 Wed 18:00] =>  0:37
+CLOCK: [2023-10-25 Wed 16:49]--[2023-10-25 Wed 17:13] =>  0:24
+CLOCK: [2023-10-25 Wed 13:03]--[2023-10-25 Wed 16:43] =>  3:40
 CLOCK: [2023-10-25 Wed 09:08]--[2023-10-25 Wed 12:16] =>  3:08
 CLOCK: [2023-10-25 Wed 07:32]--[2023-10-25 Wed 08:55] =>  1:23
 CLOCK: [2023-10-24 Tue 19:02]--[2023-10-25 Wed 01:58] =>  6:56
@@ -190,8 +196,8 @@ CLOCK: [2023-10-24 Tue 09:14]--[2023-10-24 Tue 10:21] =>  1:07
 - [ ] Wireframe
 - [ ] One Card
 - [ ] One Page
-- [ ] Got to frontend, fetch and console.log() json
-- [ ] Go to frontend, fetch value
+- [X] Got to frontend, fetch and console.log() json
+- [X] Go to frontend, fetch value
 - [ ] Go to frontend, increase flip value
 - [X] Get React working with MindAR
 - [X] Explore MindAR React example, add it to playground
@@ -202,7 +208,7 @@ CLOCK: [2023-10-24 Tue 09:14]--[2023-10-24 Tue 10:21] =>  1:07
 - [X] help friend to improve his project
   - [X] get truffle correctly running
   - [X] write migration script
-  - [X] write tests
+  - [X] write testimport metadata from 'contract/metadata.json's
   - [X] use of truffle console
   - [X] create frontend thingy
   - [X] create div for blocknumber updater
@@ -216,5 +222,13 @@ CLOCK: [2023-10-24 Tue 09:14]--[2023-10-24 Tue 10:21] =>  1:07
 - [X] add bullet points to vitepress
 - [X] try to reproduce react mind ar repo
 - [X] comment github issue on tresjs
-- [ ] debug fetch, because of wsl 
-- [ ] try to port it to windows
+- [X] debug fetch, because of wsl
+- [X] try to port it to windows
+- [X] figured out that use(cors) is the actually error
+- [X] create fetchSmartContract Component
+- [X] add useInk
+- [X] add Custom Local chain config
+- [X] get Metadata, recompile
+- [X] connect to wallet
+- [X] disconnect to wallet
+- [ ] make it work
