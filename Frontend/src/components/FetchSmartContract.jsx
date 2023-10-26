@@ -1,30 +1,35 @@
 import { useWallet, useAllWallets } from "useink";
-// import { useContract } from "useink";
-// import metadata from "./moes_coaster.json";
-// const CONTRACT_ADDRESS = "5GV5ZnPynJBjYXWXExsmVdQgdrePFXDfPy4CkEv7w5nssY7n";
-// const contract = useContract(CONTRACT_ADDRESS, metadata);
 
-import { useCall, useContract } from "useink";
-import { pickDecoded } from "useink/utils";
+import { useCall, useContract, useTx } from "useink";
 import metadata from "./moes_coaster.json";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const FetchSmartContract = () => {
+  const [flipValue, setFlipValue] = useState(null);
   const { account, connect, disconnect } = useWallet();
   const wallets = useAllWallets();
 
   //Use Call
-  const CONTRACT_ADDRESS = "5GV5ZnPynJBjYXWXExsmVdQgdrePFXDfPy4CkEv7w5nssY7n";
-  const contract = useContract(CONTRACT_ADDRESS, metadata, "local");
+  const CONTRACT_ADDRESS = "5FQBQdZ4GKHnQGbXDL1GFStMFGBuSugHQKXaCLewn4aNUx9H";
+  const contract = useContract(CONTRACT_ADDRESS, metadata, "localnode");
   const get = useCall(contract, "get");
-  const args = ["arg-1", 2];
+  const flip = useTx(contract, "flip");
 
+  const getValue = async () => {
+    get.send().then((result) => {
+      console.log(result.value.decoded)
+      setFlipValue(result.value.decoded);
+    });
+  };
   useEffect(() => {
-    const geto = async () => {
-      const thing = await get.send();
-    };
-    geto();
-  }, []);
+    if(flipValue){
+      getValue()
+    }
+  }, [flipValue]);
+
+  const flipIt = () => {
+    flip.signAndSend();
+  };
 
   if (!account) {
     return (
@@ -60,14 +65,13 @@ const FetchSmartContract = () => {
       <h1>Hello FetchSmartContract</h1>;
       <p>You are connected as {account?.name || account.address}</p>
       <button onClick={disconnect}>Disconnect Wallet</button>
-      <h1>Call somethin</h1>
-      <h1>
-        Get the Result the hard way:{" "}
-        {get.result?.ok ? get.result.value.decoded.foo : "--"}
-      </h1>
-      <button disabled={get.isSubmitting} onClick={() => get.send(args)}>
-        Get Result
+      <h1>Call something</h1>
+      <button disabled={get.isSubmitting} onClick={flipIt}>
+        Flip Value
       </button>
+      <p>
+        Current flipValue is {flipValue === false ? "its false" : "its true"}
+      </p>
     </>
   );
 };
