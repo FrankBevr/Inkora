@@ -4,9 +4,28 @@ import { useWallet, useAllWallets } from "useink";
 // const CONTRACT_ADDRESS = "5GV5ZnPynJBjYXWXExsmVdQgdrePFXDfPy4CkEv7w5nssY7n";
 // const contract = useContract(CONTRACT_ADDRESS, metadata);
 
+import { useCall, useContract } from "useink";
+import { pickDecoded } from "useink/utils";
+import metadata from "./moes_coaster.json";
+import { useEffect } from "react";
+
 const FetchSmartContract = () => {
   const { account, connect, disconnect } = useWallet();
   const wallets = useAllWallets();
+
+  //Use Call
+  const CONTRACT_ADDRESS = "5GV5ZnPynJBjYXWXExsmVdQgdrePFXDfPy4CkEv7w5nssY7n";
+  const contract = useContract(CONTRACT_ADDRESS, metadata, "local");
+  const get = useCall(contract, "get");
+  const args = ["arg-1", 2];
+
+  useEffect(() => {
+    const geto = async () => {
+      const thing = await get.send();
+    };
+    geto();
+  }, []);
+
   if (!account) {
     return (
       <ul>
@@ -41,6 +60,14 @@ const FetchSmartContract = () => {
       <h1>Hello FetchSmartContract</h1>;
       <p>You are connected as {account?.name || account.address}</p>
       <button onClick={disconnect}>Disconnect Wallet</button>
+      <h1>Call somethin</h1>
+      <h1>
+        Get the Result the hard way:{" "}
+        {get.result?.ok ? get.result.value.decoded.foo : "--"}
+      </h1>
+      <button disabled={get.isSubmitting} onClick={() => get.send(args)}>
+        Get Result
+      </button>
     </>
   );
 };
