@@ -68,7 +68,7 @@ SmartContract:
 3. Save it
 
 
-** TODO [#A] Quick and Rough [4/8]
+** TODO [#A] Quick and Rough [6/8]
 :LOGBOOK:
 CLOCK: [2023-10-21 Sat 13:02]--[2023-10-21 Sat 13:17] =>  0:15
 :END:
@@ -134,7 +134,7 @@ CLOCK: [2023-10-22 Sun 19:46]--[2023-10-22 Sun 19:56] =>  0:10
 - [X] Install express
 - [X] Serve a stupid json
 - [X] Got to frontend, fetch and console.log() json
-*** TODO [#A] SmartContract [7/9]
+*** DONE [#A] SmartContract [9/9]
 :LOGBOOK:
 CLOCK: [2023-10-22 Sun 20:45]--[2023-10-22 Sun 21:46] =>  1:01
 :END:
@@ -145,8 +145,8 @@ CLOCK: [2023-10-22 Sun 20:45]--[2023-10-22 Sun 21:46] =>  1:01
 - [X] start node and deploy contract
 - [X] call function via terminal
 - [X] call function via substrate ui
-- [ ] Go to frontend, fetch value
-- [ ] Go to frontend, increase flip value
+- [X] Go to frontend, fetch value
+- [X] Go to frontend, increase flip value
 *** DONE [#C] 3D [3/3]
 :LOGBOOK:
 CLOCK: [2023-10-22 Sun 21:49]--[2023-10-22 Sun 21:52] =>  0:03
@@ -177,9 +177,12 @@ CLOCK: [2023-10-22 Sun 21:53]--[2023-10-22 Sun 23:38] =>  1:45
 - [X] Set up Dev enviorment
 - [X] Back on Track, drink a Tea
 
-*** TODO [#A] Finish steps before add Steps [23/29]
+*** TODO [#A] Finish steps before add Steps [29/36]
 :LOGBOOK:
-CLOCK: [2023-10-25 Wed 20:25]
+CLOCK: [2023-10-26 Thu 11:54]--[2023-10-26 Thu 12:31] =>  0:37
+CLOCK: [2023-10-26 Thu 10:47]--[2023-10-26 Thu 11:48] =>  1:01
+CLOCK: [2023-10-26 Thu 07:59]--[2023-10-26 Thu 10:18] =>  2:19
+CLOCK: [2023-10-25 Wed 20:25]--[2023-10-25 Wed 21:08] =>  0:43
 CLOCK: [2023-10-25 Wed 20:04]--[2023-10-25 Wed 20:15] =>  0:11
 CLOCK: [2023-10-25 Wed 18:01]--[2023-10-25 Wed 18:43] =>  0:42
 CLOCK: [2023-10-25 Wed 17:23]--[2023-10-25 Wed 18:00] =>  0:37
@@ -198,7 +201,7 @@ CLOCK: [2023-10-24 Tue 09:14]--[2023-10-24 Tue 10:21] =>  1:07
 - [ ] One Page
 - [X] Got to frontend, fetch and console.log() json
 - [X] Go to frontend, fetch value
-- [ ] Go to frontend, increase flip value
+- [X] Go to frontend, increase flip value
 - [X] Get React working with MindAR
 - [X] Explore MindAR React example, add it to playground
 - [X] Install right dependencies
@@ -231,4 +234,11 @@ CLOCK: [2023-10-24 Tue 09:14]--[2023-10-24 Tue 10:21] =>  1:07
 - [X] get Metadata, recompile
 - [X] connect to wallet
 - [X] disconnect to wallet
-- [ ] make it work
+- [X] go in call about OnlyDust.xyz
+- [x] create FetchSmartContract Component
+- [x] create FetchBlockNumber Component
+- [x] get frequently Blocknumber
+- [X] make FetchSmartContract Work
+- [X] try to call a value
+- [X] fix update Value Issue
+- [X] make it work

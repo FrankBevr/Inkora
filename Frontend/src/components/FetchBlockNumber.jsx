@@ -11,15 +11,14 @@ const BlockNumber = () => {
     }
   }, [localnode]);
 
-
   return (
-    <>
+    <div style={{ border: "2px solid green", margin: 20, borderRadius: 10 }}>
       <h1>Hello FetchBlockNumber</h1>
       <p>
         Current Blocknumber
         {localnode === undefined ? " not fetch yet" : ` ${blockNumber}`}
       </p>
-    </>
+    </div>
   );
 };
 

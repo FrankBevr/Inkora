@@ -21,34 +21,37 @@ const App = () => {
     <UseInkProvider config={{ dappName: "MoesTaverne", chains: [LocalChain] }}>
       <div className="App">
         <FetchBackend />
+        <FetchBlockNumber />
         <FetchSmartContract />
-        <FetchBlockNumber/>
-
-        <div className="control-buttons">
-          {started === null && (
-            <button
-              onClick={() => {
-                setStarted("three");
-              }}
-            >
-              Start ThreeJS version
-            </button>
-          )}
-          {started !== null && (
-            <button
-              onClick={() => {
-                setStarted(null);
-              }}
-            >
-              Stop
-            </button>
+        <div
+          style={{ border: "2px solid green", margin: 20, borderRadius: 10 }}
+        >
+          <div className="control-buttons">
+            {started === null && (
+              <button
+                onClick={() => {
+                  setStarted("three");
+                }}
+              >
+                Start ThreeJS version
+              </button>
+            )}
+            {started !== null && (
+              <button
+                onClick={() => {
+                  setStarted(null);
+                }}
+              >
+                Stop
+              </button>
+            )}
+          </div>
+          {started === "three" && (
+            <div className="container">
+              <MindARThreeViewer />
+            </div>
           )}
         </div>
-        {started === "three" && (
-          <div className="container">
-            <MindARThreeViewer />
-          </div>
-        )}
       </div>
     </UseInkProvider>
   );

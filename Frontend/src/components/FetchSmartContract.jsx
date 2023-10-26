@@ -1,31 +1,44 @@
-import { useWallet, useAllWallets } from "useink";
+import { useWallet, useAllWallets, useCallSubscription } from "useink";
 
 import { useCall, useContract, useTx } from "useink";
 import metadata from "./moes_coaster.json";
 import { useEffect, useState } from "react";
+import { pickDecoded } from "useink/utils";
 
 const FetchSmartContract = () => {
   const [flipValue, setFlipValue] = useState(null);
+  const [autoUpdate, setAutoUpdate] = useState(false);
   const { account, connect, disconnect } = useWallet();
   const wallets = useAllWallets();
 
-  //Use Call
   const CONTRACT_ADDRESS = "5FQBQdZ4GKHnQGbXDL1GFStMFGBuSugHQKXaCLewn4aNUx9H";
   const contract = useContract(CONTRACT_ADDRESS, metadata, "localnode");
   const get = useCall(contract, "get");
+  const getSub = useCallSubscription(contract, "get");
   const flip = useTx(contract, "flip");
 
-  const getValue = async () => {
-    get.send().then((result) => {
-      console.log(result.value.decoded)
-      setFlipValue(result.value.decoded);
-    });
-  };
   useEffect(() => {
-    if(flipValue){
-      getValue()
+    if (flipValue) {
+      getValue();
     }
   }, [flipValue]);
+
+  useEffect(() => {
+    if (autoUpdate) {
+      if (getSub.result?.ok) {
+        const data = pickDecoded(getSub.result);
+        setFlipValue(data);
+      }
+    }
+  }, [getSub.result]);
+
+  const setAutomaticUpdate = () => {
+    setAutoUpdate(!autoUpdate);
+  };
+
+  const getValue = () => {
+    setFlipValue(getSub.result?.value.decoded);
+  };
 
   const flipIt = () => {
     flip.signAndSend();
@@ -61,7 +74,7 @@ const FetchSmartContract = () => {
     );
   }
   return (
-    <>
+    <div style={{ border: "2px solid green", margin: 20, borderRadius: 10 }}>
       <h1>Hello FetchSmartContract</h1>;
       <p>You are connected as {account?.name || account.address}</p>
       <button onClick={disconnect}>Disconnect Wallet</button>
@@ -69,10 +82,16 @@ const FetchSmartContract = () => {
       <button disabled={get.isSubmitting} onClick={flipIt}>
         Flip Value
       </button>
+      <button disabled={get.isSubmitting} onClick={getValue}>
+        Get Value
+      </button>
+      <button onClick={setAutomaticUpdate}>
+        Set Automatic Update to {autoUpdate ? "false" : "true"}
+      </button>
       <p>
         Current flipValue is {flipValue === false ? "its false" : "its true"}
       </p>
-    </>
+    </div>
   );
 };
 export default FetchSmartContract;
