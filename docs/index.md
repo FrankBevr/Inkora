@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Read the Journey
-      link: /Notes/markdown-examples
+      link: /Beginning/intro
     - theme: alt
       text: See the Moe's Taverne
       link: /Notes/markdown-examples

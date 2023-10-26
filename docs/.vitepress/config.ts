@@ -11,30 +11,32 @@ export default {
       {
         text: "The Beginning",
         items: [
-          { text: "Markdown Examples", link: "/Notes/markdown-examples" },
+          { text: "Intro", link: "/Beginning/intro.md" },
+          { text: "Motivation", link: "/Beginning/motivation.md" },
         ],
       },
       {
-        text: "The Road",
+        text: "The Journey",
         items: [
           { text: "Saturday", link: "/Journey/Saturday" },
           { text: "Sunday", link: "/Journey/Sunday" },
           { text: "Monday", link: "/Journey/Monday" },
           { text: "Tuesday", link: "/Journey/Tuesday" },
+          { text: "Wednesday", link: "/Journey/Wednesday" },
         ],
       },
       {
         text: "The Future",
         items: [
-          { text: "Markdown Examples", link: "/Notes/markdown-examples" },
+          { text: "Outlook", link: "/Future/outlook.md" },
         ],
       },
       {
         text: "Notes",
         items: [
           { text: "Launch Event", link: "/Notes/Notes-LaunchEvent" },
-          { text: "Get Block", link: "/Notes/Archy_GetBlock" },
           { text: "Software Design", link: "/Notes/Software-Design" },
+          { text: "Get Block", link: "/Notes/Archy_GetBlock" },
           { text: "AZero", link: "/Notes/dennis_integrate_azero_id" },
           { text: "Ink Championship", link: "/Notes/german_ink_championship" },
           { text: "Safe and Robust Ink", link: "/Notes/piotr_safeAndRobuts" },
