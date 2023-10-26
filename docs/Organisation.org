@@ -67,12 +67,11 @@ SmartContract:
 2. Export Cube
 3. Save it
 
-
-** TODO [#A] Quick and Rough [6/8]
+** DONE [#A] Quick and Rough [8/8]
 :LOGBOOK:
 CLOCK: [2023-10-21 Sat 13:02]--[2023-10-21 Sat 13:17] =>  0:15
 :END:
-*** TODO [#C] UX/UX [4/8]
+*** DONE [#C] UX/UX [8/8]
 :LOGBOOK:
 CLOCK: [2023-10-21 Sat 18:59]--[2023-10-21 Sat 20:52] =>  1:53
 CLOCK: [2023-10-21 Sat 18:03]--[2023-10-21 Sat 18:50] =>  0:47
@@ -95,10 +94,10 @@ CLOCK: [2023-10-21 Sat 13:17]--[2023-10-21 Sat 13:22] =>  0:05
   - [X] Add Icon Page
   - [X] Set Styles to FigFile
 - [X] One Button
-- [ ] UserFlow
-- [ ] Wireframe
-- [ ] One Card
-- [ ] One Page
+- [X] UserFlow
+- [X] Wireframe
+- [X] One Card
+- [X] One Page
 - [X] Export a pdf Design System, minimalistic
 *** DONE [#A] Frontend [18/18]
 :LOGBOOK:
@@ -177,8 +176,12 @@ CLOCK: [2023-10-22 Sun 21:53]--[2023-10-22 Sun 23:38] =>  1:45
 - [X] Set up Dev enviorment
 - [X] Back on Track, drink a Tea
 
-*** TODO [#A] Finish steps before add Steps [29/36]
+*** DONE [#A] Finish steps before add Steps [42/42]
 :LOGBOOK:
+CLOCK: [2023-10-26 Thu 18:02]--[2023-10-26 Thu 18:42] =>  0:40
+CLOCK: [2023-10-26 Thu 17:12]--[2023-10-26 Thu 17:56] =>  0:44
+CLOCK: [2023-10-26 Thu 15:39]--[2023-10-26 Thu 16:56] =>  1:17
+CLOCK: [2023-10-26 Thu 15:01]--[2023-10-26 Thu 15:30] =>  0:29
 CLOCK: [2023-10-26 Thu 11:54]--[2023-10-26 Thu 12:31] =>  0:37
 CLOCK: [2023-10-26 Thu 10:47]--[2023-10-26 Thu 11:48] =>  1:01
 CLOCK: [2023-10-26 Thu 07:59]--[2023-10-26 Thu 10:18] =>  2:19
@@ -195,10 +198,10 @@ CLOCK: [2023-10-24 Tue 16:03]--[2023-10-24 Tue 17:01] =>  0:58
 CLOCK: [2023-10-24 Tue 10:43]--[2023-10-24 Tue 11:20] =>  0:37
 CLOCK: [2023-10-24 Tue 09:14]--[2023-10-24 Tue 10:21] =>  1:07
 :END:
-- [ ] UserFlow
-- [ ] Wireframe
-- [ ] One Card
-- [ ] One Page
+- [X] UserFlow
+- [X] Wireframe
+- [X] One Card
+- [X] One Page
 - [X] Got to frontend, fetch and console.log() json
 - [X] Go to frontend, fetch value
 - [X] Go to frontend, increase flip value
@@ -235,10 +238,24 @@ CLOCK: [2023-10-24 Tue 09:14]--[2023-10-24 Tue 10:21] =>  1:07
 - [X] connect to wallet
 - [X] disconnect to wallet
 - [X] go in call about OnlyDust.xyz
-- [x] create FetchSmartContract Component
-- [x] create FetchBlockNumber Component
-- [x] get frequently Blocknumber
+- [X] create FetchSmartContract Component
+- [X] create FetchBlockNumber Component
+- [X] get frequently Blocknumber
 - [X] make FetchSmartContract Work
 - [X] try to call a value
 - [X] fix update Value Issue
 - [X] make it work
+- [X] Call with Leven, showed project, got Feedback, spoke about Randomness
+- [X] Write Markdown from yesterday alias Wednesday.md
+- [X] Add UserFlow to Design System
+- [X] Add simplistic Wireframe
+- [X] Add User Interace
+- [X] Complete Ui Things
+
+** TODO [#A] Smart Contract Work  [1/3]
+:LOGBOOK:
+CLOCK: [2023-10-26 Thu 18:41]--[2023-10-26 Thu 19:21] =>  0:40
+:END:
+- [ ] Add data called ipfs_link
+- [ ] Add function called participate_scratch_card
+- [X] reshuffle vitepress, add more structure
