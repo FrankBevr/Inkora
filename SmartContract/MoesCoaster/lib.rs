@@ -2,12 +2,15 @@
 
 #[ink::contract]
 mod moes_coaster {
+    use ink::env::hash;
     use ink::prelude::string::String;
+    use ink::prelude::vec::Vec;
 
     #[ink(storage)]
     pub struct MoesCoaster {
         ipfs_link: String,
         money: u128,
+        salt: u64,
     }
 
     impl MoesCoaster {
@@ -17,6 +20,7 @@ mod moes_coaster {
             Self {
                 ipfs_link: "ipfs://abc".into(),
                 money: 0,
+                salt: 0,
             }
         }
 
@@ -46,20 +50,27 @@ mod moes_coaster {
 
             assert!(value <= self.env().balance(), "insufficient funds!");
 
-            if self.env().transfer(self.env().caller(), value).is_err() {
-                panic!(
-                    "requested transfer failed. this can be the case if the contract does not\
-                     have sufficient free funds or if the transfer would have brought the\
-                     contract's balance below minimum balance."
-                )
-            };
+            let _ = self.env().transfer(self.env().caller(), value);
             true
         }
 
-        // Journey function create ranomness
+        // Journey function create randomness
         #[ink(message)]
-        pub fn generate_random_number(&self) -> u8 {
-            1
+        pub fn generate_random_number(&mut self, max_value: u8) -> u8 {
+            let seed = self.env().block_timestamp();
+            let mut input: Vec<u8> = Vec::new();
+            input.extend_from_slice(&seed.to_be_bytes());
+            input.extend_from_slice(&self.salt.to_be_bytes());
+            let mut output = <hash::Keccak256 as hash::HashOutput>::Type::default();
+            ink::env::hash_bytes::<hash::Keccak256>(&input, &mut output);
+            self.salt += 1;
+            let number = output[0] % (max_value + 1);
+            number
+        }
+
+        // Journey function combine randomness and feeding
+        pub fn feed_me_randomly() -> bool {
+            true
         }
     }
 
@@ -67,6 +78,9 @@ mod moes_coaster {
     mod tests {
         use super::*;
 
+        /*
+         * Unit Tests
+         */
         #[ink::test]
         fn get_ipfs_link() {
             let moes_coaster = MoesCoaster::new();
@@ -87,6 +101,15 @@ mod moes_coaster {
 
             // then
             assert_eq!(get_balance(accounts.eve), 80);
+        }
+
+        #[test]
+        fn generate_random_number() {
+            let mut contract = MoesCoaster::new();
+            for max_value in 1..=100 {
+                let result = contract.generate_random_number(max_value);
+                assert!(result <= max_value);
+            }
         }
 
         /*
