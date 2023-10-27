@@ -34,8 +34,19 @@ mod moes_coaster {
 
         // Journey function to transfer money to contract
         #[ink(message)]
-        pub fn feed_me(&self) -> bool {
-            true
+        pub fn feed_me(&self, value: Balance) {
+            ink::env::debug_println!("requested value: {}", value);
+            ink::env::debug_println!("contract balance: {}", self.env().balance());
+
+            assert!(value <= self.env().balance(), "insufficient funds!");
+
+            if self.env().transfer(self.env().caller(), value).is_err() {
+                panic!(
+                    "requested transfer failed. this can be the case if the contract does not\
+                     have sufficient free funds or if the transfer would have brought the\
+                     contract's balance below minimum balance."
+                )
+            }
         }
 
         // Journey function to transfer money from contract to caller
@@ -44,7 +55,7 @@ mod moes_coaster {
             true
         }
 
-        // Journey function create ranomness 
+        // Journey function create ranomness
         #[ink(message)]
         pub fn generate_random_number(&self) -> u8 {
             1
@@ -59,6 +70,56 @@ mod moes_coaster {
         fn default_works() {
             let moes_coaster = MoesCoaster::new();
             assert_eq!(moes_coaster.get_ipfs_link(), "ipfs://abc");
+        }
+
+        #[ink::test]
+        fn transfer_works() {
+            // given
+            let contract_balance = 100;
+            let accounts = default_accounts();
+            let mut moes_coaster = create_contract(contract_balance);
+
+            // when
+            set_sender(accounts.eve);
+            set_balance(accounts.eve, 0);
+            moes_coaster.feed_me(80);
+
+            // then
+            assert_eq!(get_balance(accounts.eve), 80);
+        }
+
+        /// Creates a new instance of `GiveMe` with `initial_balance`.
+        ///
+        /// Returns the `contract_instance`.
+        fn create_contract(initial_balance: Balance) -> MoesCoaster {
+            let accounts = default_accounts();
+            set_sender(accounts.alice);
+            set_balance(contract_id(), initial_balance);
+            MoesCoaster::new()
+        }
+
+        fn contract_id() -> AccountId {
+            ink::env::test::callee::<ink::env::DefaultEnvironment>()
+        }
+
+        fn set_sender(sender: AccountId) {
+            ink::env::test::set_caller::<ink::env::DefaultEnvironment>(sender);
+        }
+
+        fn default_accounts() -> ink::env::test::DefaultAccounts<ink::env::DefaultEnvironment> {
+            ink::env::test::default_accounts::<ink::env::DefaultEnvironment>()
+        }
+              fn set_balance(account_id: AccountId, balance: Balance) {
+            ink::env::test::set_account_balance::<ink::env::DefaultEnvironment>(
+                account_id, balance,
+            )
+        }
+
+        fn get_balance(account_id: AccountId) -> Balance {
+            ink::env::test::get_account_balance::<ink::env::DefaultEnvironment>(
+                account_id,
+            )
+            .expect("Cannot get account balance")
         }
     }
 }
