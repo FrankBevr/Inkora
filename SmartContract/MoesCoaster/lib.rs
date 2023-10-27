@@ -69,7 +69,10 @@ mod moes_coaster {
         }
 
         // Journey function combine randomness and feeding
-        pub fn feed_me_randomly() -> bool {
+        #[ink(message)]
+        pub fn feed_me_randomly(&mut self) -> bool {
+            let random_number = self.generate_random_number(10);
+            ink::env::debug_println!("thats my random number: {}", random_number);
             true
         }
     }
