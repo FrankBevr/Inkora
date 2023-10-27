@@ -2,30 +2,23 @@
 
 #[ink::contract]
 mod moes_coaster {
+
+    use ink::prelude::string::String;
+
     #[ink(storage)]
     pub struct MoesCoaster {
-        value: bool,
+        value: String,
     }
 
     impl MoesCoaster {
         #[ink(constructor)]
-        pub fn new(init_value: bool) -> Self {
-            Self { value: init_value }
-        }
-
-        #[ink(constructor)]
-        pub fn default() -> Self {
-            Self::new(Default::default())
+        pub fn new() -> Self {
+            Self { value: "ipfs://abc".into() }
         }
 
         #[ink(message)]
-        pub fn flip(&mut self) {
-            self.value = !self.value;
-        }
-
-        #[ink(message)]
-        pub fn get(&self) -> bool {
-            self.value
+        pub fn get(&self) -> String {
+            self.value.clone()
         }
     }
 
@@ -35,16 +28,16 @@ mod moes_coaster {
 
         #[ink::test]
         fn default_works() {
-            let MoesCoaster = MoesCoaster::default();
-            assert_eq!(MoesCoaster.get(), false);
+            let MoesCoaster = MoesCoaster::new();
+            assert_eq!(MoesCoaster.get(), "ipfs://abc");
         }
 
-        #[ink::test]
-        fn it_works() {
-            let mut MoesCoaster = MoesCoaster::new(false);
-            assert_eq!(MoesCoaster.get(), false);
-            MoesCoaster.flip();
-            assert_eq!(MoesCoaster.get(), true);
-        }
+        // #[ink::test]
+        // fn it_works() {
+        //     let mut MoesCoaster = MoesCoaster::new(false);
+        //     assert_eq!(MoesCoaster.get(), false);
+        //     MoesCoaster.flip();
+        //     assert_eq!(MoesCoaster.get(), true);
+        // }
     }
 }
