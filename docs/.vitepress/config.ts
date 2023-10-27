@@ -23,6 +23,7 @@ export default {
           { text: "Monday", link: "/Journey/Monday" },
           { text: "Tuesday", link: "/Journey/Tuesday" },
           { text: "Wednesday", link: "/Journey/Wednesday" },
+          { text: "Thursday", link: "/Journey/Thursday" },
         ],
       },
       {
@@ -55,7 +56,7 @@ export default {
   },
   markdown: {
     config: (md) => {
-      md.use(taskLists, {enabled: true, label: true, lineNumber: true})
+      md.use(taskLists, { enabled: true, label: true, lineNumber: true })
     }
   }
 }
