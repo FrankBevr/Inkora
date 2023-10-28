@@ -5,7 +5,20 @@ mod moes_coaster {
     use ink::env::hash;
     use ink::prelude::string::String;
     use ink::prelude::vec::Vec;
+    use scale::{Decode, Encode};
 
+    /*
+     * Errors
+     * */
+    #[derive(Debug, PartialEq, Eq, Encode, Decode)]
+    #[cfg_attr(feature = "std", derive(scale_info::TypeInfo))]
+    pub enum BeerTapErr {
+        LowCostHandle,
+    }
+
+    /*
+     * Data
+     * */
     #[ink(storage)]
     pub struct MoesCoaster {
         ipfs_link: String,
@@ -13,6 +26,9 @@ mod moes_coaster {
         salt: u64,
     }
 
+    /*
+     * Implentations
+     * */
     impl MoesCoaster {
         // Instaniate with stupid values
         #[ink(constructor)]
@@ -69,11 +85,56 @@ mod moes_coaster {
         }
 
         // Journey function combine randomness and feeding
-        #[ink(message)]
-        pub fn feed_me_randomly(&mut self) -> bool {
+        #[ink(message, payable)]
+        pub fn feed_me_randomly(&mut self) -> Result<u128, self::BeerTapErr> {
+            let transfered_food = self.env().transferred_value();
+
             let random_number = self.generate_random_number(10);
-            ink::env::debug_println!("thats my random number: {}", random_number);
-            true
+            let random_number_80: u128 = u128::from(random_number) * 80;
+            let random_number_20: u128 = u128::from(random_number) * 20;
+
+            let contract_food_20 = match transfered_food.checked_mul(random_number_20) {
+                Some(transfered_food_20) => transfered_food_20,
+                None => return Err(self::BeerTapErr::LowCostHandle),
+            };
+            let contract_food_div_100 = match self.divide_by_100(contract_food_20){
+                Ok(contract_food_20_div_100) => contract_food_20_div_100,
+                Err(err) => return Err(err) 
+            };
+            let contract_food = contract_food_div_100;
+
+            let transfered_food_80 = match transfered_food.checked_mul(random_number_80) {
+                Some(transfered_food_80) => transfered_food_80,
+                None => return Err(self::BeerTapErr::LowCostHandle),
+            };
+            let transfered_food_80_div_100 = match self.divide_by_100(transfered_food_80){
+                Ok(transfered_food_80_div_100) => transfered_food_80_div_100,
+                Err(err) => return Err(err) 
+            };
+            let caller_food_back = transfered_food_80_div_100;
+
+            let _ = self
+                .env()
+                .transfer(self.env().caller(), caller_food_back);
+
+            Ok(contract_food)
+        }
+
+        #[ink(message)]
+        pub fn divide_by_100(&self, value: u128) -> Result<u128, self::BeerTapErr> {
+            let high_bits = value >> 64;
+            let low_bits = value & ((1 << 64) - 1);
+            let quotient = match high_bits.checked_div(100) {
+                Some(h) => match h.checked_shl(64) {
+                    Some(h_shifted) => match low_bits.checked_div(100) {
+                        Some(l) => h_shifted + l,
+                        None => 0,
+                    },
+                    None => 0,
+                },
+                None => 0,
+            };
+            Ok(quotient)
         }
     }
 
