@@ -9,6 +9,8 @@ ink = { version = "4.3.0", default-features = false }
 
 scale = { package = "parity-scale-codec", version = "3", default-features = false, features = ["derive"] }
 scale-info = { version = "2.6", default-features = false, features = ["derive"], optional = true }
+azns-integration = { git = "https://github.com/azero-id/contract-integration", default-features = false }
+
 
 [lib]
 path = "lib.rs"
@@ -19,6 +21,7 @@ std = [
     "ink/std",
     "scale/std",
     "scale-info/std",
+     "azns-integration/std",
 ]
 ink-as-dependency = []
 e2e-tests = []

@@ -1,7 +1,12 @@
 #![cfg_attr(not(feature = "std"), no_std, no_main)]
 
+mod azns_router;
+
 #[ink::contract]
 mod moes_coaster {
+    use crate::azns_router::AznsContract;
+    use crate::azns_router::Error;
+    // use azns_router::AznsContract;
     use ink::env::hash;
     use ink::prelude::string::String;
     use ink::prelude::vec::Vec;
@@ -16,6 +21,23 @@ mod moes_coaster {
         LowCostHandle,
     }
 
+    #[derive(Debug, PartialEq, Eq, scale::Encode, scale::Decode)]
+    #[cfg_attr(feature = "std", derive(scale_info::TypeInfo))]
+    pub enum AznsRouterError {
+        /// Caller is not allowed to call privileged calls.
+        NotAdmin,
+        /// Not a contract address
+        InvalidRegistryAddress,
+        /// Given TLD already points to a registry
+        TldAlreadyInUse(String),
+        /// Given Tld not found
+        TldNotFound(String),
+        /// Cannot find the resolved address
+        CouldNotResolveDomain,
+        /// Domain does not contain valid name and/or tld
+        InvalidDomainName,
+    }
+
     /*
      * Data
      * */
@@ -24,6 +46,16 @@ mod moes_coaster {
         ipfs_link: String,
         money: u128,
         salt: u64,
+    }
+
+    #[derive(scale::Encode, scale::Decode, PartialEq)]
+    #[cfg_attr(
+        feature = "std",
+        derive(scale_info::TypeInfo, ink::storage::traits::StorageLayout, Debug)
+    )]
+    pub enum AccountIdOrDomain {
+        AccountId(AccountId),
+        Domain(String),
     }
 
     /*
@@ -48,14 +80,19 @@ mod moes_coaster {
 
         //  main function
         #[ink(message, payable)]
-        pub fn participate_scratch_card(&self, random_number: u8) -> Result<u128, self::BeerTapErr>{
+        pub fn participate_scratch_card(
+            &mut self,
+            random_number: u8,
+        ) -> Result<u128, self::BeerTapErr> {
             let random_number = self.generate_random_number(random_number);
             if random_number % 2 == 0 {
                 let contract_feeded_value = self.env().transferred_value();
                 Ok(contract_feeded_value)
-            }else{
+            } else {
                 let caller_feeded_value = self.env().balance();
-                self.env().transfer(self.env().caller(), self.env().balance());
+                let _ = self
+                    .env()
+                    .transfer(self.env().caller(), self.env().balance());
                 Ok(caller_feeded_value)
             }
         }
@@ -147,6 +184,18 @@ mod moes_coaster {
                 None => 0,
             };
             Ok(percentage_value)
+        }
+
+        #[ink(message)]
+        pub fn get_address(
+            &self,
+            router_addr: AccountId,
+            domain: String,
+        ) -> Result<AccountId, Error> {
+            // Can also store it in contract storage
+            let router: ink::contract_ref!(AznsContract) = router_addr.into();
+
+            router.get_address(domain)
         }
     }
 
