@@ -4,6 +4,7 @@ import MindARThreeViewer from "./components/mindar-three-viewer";
 import FetchBackend from "./components/FetchBackend.jsx";
 import FetchSmartContract from "./components/FetchSmartContract";
 import FetchBlockNumber from "./components/FetchBlockNumber";
+import ButtonParticpateScratchCard from "./components/ButtonParticipateScratchCard";
 import { UseInkProvider } from "useink";
 import { Custom } from "useink/chains";
 
@@ -23,6 +24,7 @@ const App = () => {
         <FetchBackend />
         <FetchBlockNumber />
         <FetchSmartContract />
+        <ButtonParticpateScratchCard />
         <div
           style={{ border: "2px solid green", margin: 20, borderRadius: 10 }}
         >
