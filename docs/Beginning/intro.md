@@ -4,13 +4,13 @@
 
 | The Beginning                                 | The Journey                             | The Future                         |
 | :-------------------------------------------- | :-------------------------------------- | :--------------------------------- |
-| [Intro](/docs/Beginning/intro.md)             | [Saturday](/docs/Journey/Saturday.md)   | [Outlook](/docs/Future/outlook.md) |
-| [Motiviation](/docs/Beginning/motiviation.md) | [Sunday](/docs/Journey/Sunday.md)       |                                    |
-|                                               | [Monday](/docs/Journey/Monday.md)       |                                    |
-|                                               | [Tuesday](/docs/Journey/Tuesday.md)     |                                    |
-|                                               | [Wednesday](/docs/Journey/Wednesday.md) |                                    |
-|                                               | [Thursday](/docs/Journey/Thursday.md)   |                                    |
-|                                               | [Friday](/docs/Journey/Friday.md)       |                                    |
+| [Intro](/Beginning/intro.md)             | [Saturday](/Journey/Saturday.md)   | [Outlook](/Future/outlook.md) |
+| [Motiviation](/Beginning/motivation.md) | [Sunday](/Journey/Sunday.md)       |                                    |
+|                                               | [Monday](/Journey/Monday.md)       |                                    |
+|                                               | [Tuesday](/Journey/Tuesday.md)     |                                    |
+|                                               | [Wednesday](/Journey/Wednesday.md) |                                    |
+|                                               | [Thursday](/Journey/Thursday.md)   |                                    |
+|                                               | [Friday](/Journey/Friday.md)       |                                    |
 
 
 🖱️ **Just click around.**  🖱️ 

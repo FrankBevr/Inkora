@@ -14,10 +14,10 @@ hero:
       link: /Notes/markdown-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: WebAR
+    details: Appless holographic expieriences.
+  - title: Fully Documnted
+    details: Nobody reads code.
+  - title: Ink!
+    details: Rust powered Smart Contracts with multichain deployment capabilties.
 ---

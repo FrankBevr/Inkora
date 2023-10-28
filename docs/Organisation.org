@@ -252,10 +252,45 @@ CLOCK: [2023-10-24 Tue 09:14]--[2023-10-24 Tue 10:21] =>  1:07
 - [X] Add User Interace
 - [X] Complete Ui Things
 
-** TODO [#A] Smart Contract Work  [1/3]
+** TODO [#A] Smart Contract Work & Diverse [11/12]
 :LOGBOOK:
+CLOCK: [2023-10-28 Sat 10:46]--[2023-10-28 Sat 12:08] =>  1:22
+CLOCK: [2023-10-28 Sat 07:33]--[2023-10-28 Sat 10:37] =>  3:04
+CLOCK: [2023-10-27 Fri 17:01]--[2023-10-27 Fri 18:58] =>  1:57
+CLOCK: [2023-10-27 Fri 14:48]--[2023-10-27 Fri 15:02] =>  0:14
+CLOCK: [2023-10-27 Fri 11:12]--[2023-10-27 Fri 12:18] =>  1:06
+CLOCK: [2023-10-27 Fri 09:54]--[2023-10-27 Fri 11:02] =>  1:08
+CLOCK: [2023-10-27 Fri 07:12]--[2023-10-27 Fri 07:27] =>  0:15
+CLOCK: [2023-10-26 Thu 20:12]--[2023-10-27 Fri 00:14] =>  4:02
 CLOCK: [2023-10-26 Thu 18:41]--[2023-10-26 Thu 19:21] =>  0:40
 :END:
-- [ ] Add data called ipfs_link
-- [ ] Add function called participate_scratch_card
+- [X] Add data called ipfs_link
+- [X] Add function called participate_scratch_card
 - [X] reshuffle vitepress, add more structure
+- [X] help a friend with datavis for treasury stuff
+- [X] Write Thursday.md
+- [X] rebuild, redeploy docs
+- [X] particpate on polka accemdy call
+- [X] import string sucessfully on 4.0
+- [X] add ipfs mockUp
+- [X] add test
+- [X] make it compile
+- [-] add participate_scratch_card
+  - [X] chunk it down in JourneyFunction
+  - [X] add feedMe() function
+  - [X] add pukeIt() function
+  - [X] add generateRandomness function
+  - [X] use contract example to make feedMe kind of work
+  - [X] add tests to feedMe()
+  - [X] come up with a stupid randomness, maybe blocktime
+  - [X] add pseudo randomness from astar docs
+  - [X] add feed_me_randomly
+    - [X] figure out how to divide without using division
+    - [X] add divide_by_100()
+    - [X] fix divide_by_100()
+    - [X] make it work again
+  - [X] add simplistic Error Handling
+  - [X] add intro.md
+  - [X] add motivation.md
+  - [X] fill out feature section of starter page.
+  - [ ] redeploy docs
