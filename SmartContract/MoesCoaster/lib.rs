@@ -47,9 +47,17 @@ mod moes_coaster {
         }
 
         //  main function
-        #[ink(message)]
-        pub fn participate_scratch_card(&self, random_number: u8) -> u8 {
-            random_number
+        #[ink(message, payable)]
+        pub fn participate_scratch_card(&self, random_number: u8) -> Result<u128, self::BeerTapErr>{
+            let random_number = self.generate_random_number(random_number);
+            if random_number % 2 == 0 {
+                let contract_feeded_value = self.env().transferred_value();
+                Ok(contract_feeded_value)
+            }else{
+                let caller_feeded_value = self.env().balance();
+                self.env().transfer(self.env().caller(), self.env().balance());
+                Ok(caller_feeded_value)
+            }
         }
 
         // Journey function to transfer money to contract
@@ -84,47 +92,51 @@ mod moes_coaster {
             number
         }
 
-        // Journey function combine randomness and feeding
+        // Journey function combine randomness, feeding  and puking
         #[ink(message, payable)]
         pub fn feed_me_randomly(&mut self) -> Result<u128, self::BeerTapErr> {
             let transfered_food = self.env().transferred_value();
 
+            // Generate random number, instantiate 20%, instantiate 80%
             let random_number = self.generate_random_number(10);
             let random_number_80: u128 = u128::from(random_number) * 80;
             let random_number_20: u128 = u128::from(random_number) * 20;
 
+            // Calculate contract_food value 20%
             let contract_food_20 = match transfered_food.checked_mul(random_number_20) {
                 Some(transfered_food_20) => transfered_food_20,
                 None => return Err(self::BeerTapErr::LowCostHandle),
             };
-            let contract_food_div_100 = match self.divide_by_100(contract_food_20){
+            let contract_food_div_100 = match self.divide_by_100(contract_food_20) {
                 Ok(contract_food_20_div_100) => contract_food_20_div_100,
-                Err(err) => return Err(err) 
+                Err(err) => return Err(err),
             };
             let contract_food = contract_food_div_100;
 
+            // Calculate caller value 80%, which get sends back
             let transfered_food_80 = match transfered_food.checked_mul(random_number_80) {
                 Some(transfered_food_80) => transfered_food_80,
                 None => return Err(self::BeerTapErr::LowCostHandle),
             };
-            let transfered_food_80_div_100 = match self.divide_by_100(transfered_food_80){
+            let transfered_food_80_div_100 = match self.divide_by_100(transfered_food_80) {
                 Ok(transfered_food_80_div_100) => transfered_food_80_div_100,
-                Err(err) => return Err(err) 
+                Err(err) => return Err(err),
             };
             let caller_food_back = transfered_food_80_div_100;
 
-            let _ = self
-                .env()
-                .transfer(self.env().caller(), caller_food_back);
+            // send 80% back to caller
+            let _ = self.env().transfer(self.env().caller(), caller_food_back);
 
+            // return value of the contract is feeded.
             Ok(contract_food)
         }
 
+        // Journey function to calcuclate percentage without using devision
         #[ink(message)]
         pub fn divide_by_100(&self, value: u128) -> Result<u128, self::BeerTapErr> {
             let high_bits = value >> 64;
             let low_bits = value & ((1 << 64) - 1);
-            let quotient = match high_bits.checked_div(100) {
+            let percentage_value = match high_bits.checked_div(100) {
                 Some(h) => match h.checked_shl(64) {
                     Some(h_shifted) => match low_bits.checked_div(100) {
                         Some(l) => h_shifted + l,
@@ -134,7 +146,7 @@ mod moes_coaster {
                 },
                 None => 0,
             };
-            Ok(quotient)
+            Ok(percentage_value)
         }
     }
 
