@@ -1,36 +1,33 @@
-### Hola 🌤️
+### Cześć 👾
 
-Yesterday was Saturday and I write a a quick Recap.
-
-### Intro
-
-On these kinds of Projects I chunk them usually. Take a piece of time that i like to commit and throw it against it. In this case 1 week.
-Before I start try to particpates on Workshops with the hope I learn something which i was not aware of it.
-Thats always the case, so declaring victory is already set in stone. 🏆
-
-:::details Recap - Details
+Ok, i keep it quick. 
 
 ### Recap
 
-- [x] I reorganised the current Repo
-- [x] Add Vitepress to make a easy BackUp if something goes wrong.
-- [x] I recap features of .org Files 
-- [x] I add Organisation.org
-- [x] I wrote down a rough roadmap to get something running
-- [x] I chunk the Roadmap down in smaller parts
-- [x] I start with one, Figma(UI/UX)
-- [x] I choose a Colorshema
-- [x] I choose a Typography combination
-- [x] I created Figma Style for consitency and easy access
-- [x] I created one button
-- [x] I refactor the Button into a Figma Component
-- [x] I created a Design Document to get a commit under the Belt
-- [x] I tracked my time via the Organisation.org
+:::details Recap - Details
+
+- [-] add participate_scratch_card
+  - [X] add feed_me_randomly
+    - [X] figure out how to divide without using division
+    - [X] add divide_by_100()
+    - [X] fix divide_by_100()
+    - [X] make it work again
+  - [X] add simplistic Error Handling
+  - [X] add intro.md
+  - [X] add motivation.md
+  - [X] fill out feature section of starter page.
+  - [X] clean up the repo a bit
+    - [X] change dennis to submodules
+    - [X] add .gitattributes
+    - [X] fix minor issue with .gitattributes
+  - [X] redeploy docs
+  - [X] integrate AZero Id at least get it compile finally
+  - [X] call it a day, collecting data for UseCase alias BDay party.
+  - [ ] write Saturday.md
 
 :::
 
 ### Summa Summarum
 
-- Added Organisation 
-- Setted Up Figma 
-- Added Design System,
+- made `participate_scratch_card()` workd, bitwise operation ftw.
+- add AzeroId integration to Contract

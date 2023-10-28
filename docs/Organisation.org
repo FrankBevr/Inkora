@@ -252,8 +252,12 @@ CLOCK: [2023-10-24 Tue 09:14]--[2023-10-24 Tue 10:21] =>  1:07
 - [X] Add User Interace
 - [X] Complete Ui Things
 
-** TODO [#A] Smart Contract Work & Diverse [11/12]
+** TODO [#A] Smart Contract Work & Diverse [12/12]
 :LOGBOOK:
+CLOCK: [2023-10-28 Sat 18:38]--[2023-10-28 Sat 18:50] =>  0:12
+CLOCK: [2023-10-28 Sat 17:58]--[2023-10-28 Sat 18:38] =>  0:40
+CLOCK: [2023-10-28 Sat 13:56]--[2023-10-28 Sat 15:13] =>  1:17
+CLOCK: [2023-10-28 Sat 12:16]--[2023-10-28 Sat 13:31] =>  1:15
 CLOCK: [2023-10-28 Sat 10:46]--[2023-10-28 Sat 12:08] =>  1:22
 CLOCK: [2023-10-28 Sat 07:33]--[2023-10-28 Sat 10:37] =>  3:04
 CLOCK: [2023-10-27 Fri 17:01]--[2023-10-27 Fri 18:58] =>  1:57
@@ -275,7 +279,7 @@ CLOCK: [2023-10-26 Thu 18:41]--[2023-10-26 Thu 19:21] =>  0:40
 - [X] add ipfs mockUp
 - [X] add test
 - [X] make it compile
-- [-] add participate_scratch_card
+- [X] add participate_scratch_card
   - [X] chunk it down in JourneyFunction
   - [X] add feedMe() function
   - [X] add pukeIt() function
@@ -293,4 +297,13 @@ CLOCK: [2023-10-26 Thu 18:41]--[2023-10-26 Thu 19:21] =>  0:40
   - [X] add intro.md
   - [X] add motivation.md
   - [X] fill out feature section of starter page.
-  - [ ] redeploy docs
+  - [X] clean up the repo a bit
+    - [X] change dennis to submodules
+    - [X] add .gitattributes
+    - [X] fix minor issue with .gitattributes
+  - [X] redeploy docs
+  - [X] integrate AZero Id at least get it compile finally
+  - [X] call it a day, collecting data for UseCase alias BDay party.
+  - [X] write Friday.md
+  - [X] redeploy docs
+  - [ ] create plan for the last 12 hours tomorrow
