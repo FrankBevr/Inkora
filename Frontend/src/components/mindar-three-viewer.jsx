@@ -13,6 +13,7 @@ export default () => {
         "https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.0/examples/image-tracking/assets/card-example/card.mind",
       uiLoading: false,
       uiScanning: false,
+      uiError: false,
     });
     const { renderer, scene, camera } = mindarThree;
     const anchor = mindarThree.addAnchor(0);
@@ -24,23 +25,23 @@ export default () => {
     });
     const plane = new THREE.Mesh(geometry, material);
 
-    const geometry2 = new THREE.SphereGeometry(1, 32, 32);
+    const geometry2 = new THREE.BoxGeometry(1, 1, 1);
     const material2 = new THREE.MeshBasicMaterial({
-      color: 0x00ff00,
+      color: 0x0000ff,
       transparent: true,
       opacity: 0.5,
     });
-    const sphere = new THREE.Mesh(geometry2, material2);
-
-    const modelUrl = "./Power_Up.gltf"
-    const loader = new GLTFLoader();
-    loader.load(modelUrl, (gltf) => {
-      const model = gltf.scene;
-      anchor.group.add(model);
-    });
+    const cube = new THREE.Mesh(geometry2, material2);
+    //
+    // const modelUrl = "./Power_Up.gltf"
+    // const loader = new GLTFLoader();
+    // loader.load(modelUrl, (gltf) => {
+    //   const model = gltf.scene;
+    //   anchor.group.add(model);
+    // });
 
     anchor.group.add(plane);
-    anchor.group.add(sphere);
+    anchor.group.add(cube);
 
     mindarThree.start();
     renderer.setAnimationLoop(() => {

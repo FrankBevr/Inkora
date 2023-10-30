@@ -1,7 +1,7 @@
 import { useWallet, useAllWallets, useCallSubscription } from "useink";
 
 import { useCall, useContract, useTx } from "useink";
-import metadata from "./moes_coaster.json";
+import metadata from "./flipper.json";
 import { useEffect, useState } from "react";
 import { pickDecoded } from "useink/utils";
 
@@ -11,7 +11,7 @@ const FetchSmartContract = () => {
   const { account, connect, disconnect } = useWallet();
   const wallets = useAllWallets();
 
-  const CONTRACT_ADDRESS = "5FQBQdZ4GKHnQGbXDL1GFStMFGBuSugHQKXaCLewn4aNUx9H";
+  const CONTRACT_ADDRESS = "5G7mrDs8836fgXS8Z3VS3CrKGwZ5sNzYKDNU1Qe6wdAkDBCe";
   const contract = useContract(CONTRACT_ADDRESS, metadata, "localnode");
   const get = useCall(contract, "get");
   const getSub = useCallSubscription(contract, "get");
