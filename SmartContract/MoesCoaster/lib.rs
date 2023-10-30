@@ -6,7 +6,6 @@ mod azns_router;
 mod moes_coaster {
     use crate::azns_router::AznsContract;
     use crate::azns_router::Error;
-    // use azns_router::AznsContract;
     use ink::env::hash;
     use ink::prelude::string::String;
     use ink::prelude::vec::Vec;
@@ -44,7 +43,6 @@ mod moes_coaster {
     #[ink(storage)]
     pub struct MoesCoaster {
         ipfs_link: String,
-        money: u128,
         salt: u64,
     }
 
@@ -67,7 +65,6 @@ mod moes_coaster {
         pub fn new() -> Self {
             Self {
                 ipfs_link: "ipfs://abc".into(),
-                money: 0,
                 salt: 0,
             }
         }
@@ -106,11 +103,7 @@ mod moes_coaster {
         // Journey function to transfer money from contract to caller
         #[ink(message)]
         pub fn puke_it(&self, value: Balance) -> bool {
-            ink::env::debug_println!("requested value: {}", value);
-            ink::env::debug_println!("contract balance: {}", self.env().balance());
-
             assert!(value <= self.env().balance(), "insufficient funds!");
-
             let _ = self.env().transfer(self.env().caller(), value);
             true
         }
