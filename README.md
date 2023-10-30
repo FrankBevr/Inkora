@@ -2,6 +2,8 @@
 <img src="https://static.wikia.nocookie.net/desimpsons/images/d/d6/Moes_Tavern_2.png/revision/latest?cb=20121013084753" alt="logo" width="120" height="80" />
 </div>
 
+> ⚠️  `git checkout 34bdb8c` to get Status of Submission
+
 <h3 align="center">Inkora</h3>
   <p align="center">
   Moe's Taverna
