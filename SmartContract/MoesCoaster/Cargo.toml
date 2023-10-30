@@ -21,7 +21,7 @@ std = [
     "ink/std",
     "scale/std",
     "scale-info/std",
-     "azns-integration/std",
+    "azns-integration/std",
 ]
 ink-as-dependency = []
 e2e-tests = []
