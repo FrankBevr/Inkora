@@ -44,6 +44,7 @@ mod moes_coaster {
     pub struct MoesCoaster {
         ipfs_link: String,
         salt: u64,
+        owner: AccountId,
     }
 
     #[derive(scale::Encode, scale::Decode, PartialEq)]
@@ -66,6 +67,7 @@ mod moes_coaster {
             Self {
                 ipfs_link: "ipfs://abc".into(),
                 salt: 0,
+                owner: Self::env().caller(),
             }
         }
 
@@ -97,7 +99,9 @@ mod moes_coaster {
         // Journey function to transfer money to contract
         #[ink(message, payable)]
         pub fn feed_me(&self) {
-            let _ = self.env().transferred_value();
+            if self.owner == self.env().caller(){
+                let _ = self.env().transferred_value();
+            }
         }
 
         // Journey function to transfer money from contract to caller
@@ -189,6 +193,13 @@ mod moes_coaster {
             let router: ink::contract_ref!(AznsContract) = router_addr.into();
 
             router.get_address(domain)
+        }
+
+        #[ink(message)]
+        pub fn change_owner(&mut self, new_owner: AccountId) {
+            if self.owner == self.env().caller(){
+                self.owner = new_owner;
+            }
         }
     }
 
