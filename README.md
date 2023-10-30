@@ -2,8 +2,6 @@
 <img src="https://static.wikia.nocookie.net/desimpsons/images/d/d6/Moes_Tavern_2.png/revision/latest?cb=20121013084753" alt="logo" width="120" height="80" />
 </div>
 
-> ⚠️  `git checkout 34bdb8c` to get Status of Submission
-
 <h3 align="center">Inkora</h3>
   <p align="center">
   Moe's Taverna
@@ -14,9 +12,13 @@
     ·
     <a href="https://github.com/FrankBevr/Inkora">Code</a>
     ·
-    <a href="">Youtube</a>
+    <a href="https://youtu.be/2Au1aeZFij0">Youtube</a>
   </p>
 </div>
+
+> ⚠️  `git checkout 34bdb8c` to get Status of Submission   
+
+> ⚠️  `git checkout 53180bb` to get the version of the latest Video  
 
 ### Screenshot
 

@@ -6,7 +6,7 @@ const ButtonParticpateScratchCard = () => {
   const { account, connect, disconnect } = useWallet();
   const wallets = useAllWallets();
 
-  const CONTRACT_ADDRESS = "5Ft3wRpGfhr2qyu9ne4NoeitFCud3PRX4WmdHh7BuuR9NSVS";
+  const CONTRACT_ADDRESS = "5ChLssFoi5Jm2u2gDXLNfNtnWqJz1sY1s9W9QoDpQPirtQWF";
   const contract = useContract(CONTRACT_ADDRESS, metadata, "localnode");
   const getIpfsLink = useCall(contract, "getIpfsLink");
   const participate = useCall(contract, "participateScratchCard")
