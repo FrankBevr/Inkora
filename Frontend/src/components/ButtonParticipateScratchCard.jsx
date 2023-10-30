@@ -1,19 +1,22 @@
 import { useWallet, useAllWallets } from "useink";
-
-import { useContract, useTx } from "useink";
+import { useContract, useTx, useCall } from "useink";
 import metadata from "./moes_coaster.json";
 
 const ButtonParticpateScratchCard = () => {
   const { account, connect, disconnect } = useWallet();
   const wallets = useAllWallets();
 
-  const CONTRACT_ADDRESS = "5FQBQdZ4GKHnQGbXDL1GFStMFGBuSugHQKXaCLewn4aNUx9H";
+  const CONTRACT_ADDRESS = "5Ft3wRpGfhr2qyu9ne4NoeitFCud3PRX4WmdHh7BuuR9NSVS";
   const contract = useContract(CONTRACT_ADDRESS, metadata, "localnode");
-  const participateScratchCard = useTx(contract, "participate_scratch_card");
+  const getIpfsLink = useCall(contract, "getIpfsLink");
+  const participate = useCall(contract, "participateScratchCard")
 
-  const flipIt = () => {
-    // ⚠️  that will not work yet, i assume
-    participateScratchCard.participateScratchCard();
+
+  const scratchIt = async () => {
+    const result = await getIpfsLink.send()
+    console.log(result.value.decoded)
+    const resultB = await participate.send([5], { value: "400000000000000000" })
+    console.log(resultB.value.decoded)
   };
 
   if (!account) {
@@ -47,12 +50,10 @@ const ButtonParticpateScratchCard = () => {
   }
   return (
     <div style={{ border: "2px solid green", margin: 20, borderRadius: 10 }}>
-      <h1>Hello ButtonParticpateScratchCard</h1>;
+      <h1>Hello ButtonParticpateScratchCard</h1>
       <p>You are connected as {account?.name || account.address}</p>
       <button onClick={disconnect}>Disconnect Wallet</button>
-      <button  onClick={participateScratchCard}>
-        Scratch Me
-      </button>
+      <button onClick={scratchIt}>Scratch Me</button>
     </div>
   );
 };

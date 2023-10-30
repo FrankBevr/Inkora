@@ -21,9 +21,9 @@ const App = () => {
   return (
     <UseInkProvider config={{ dappName: "MoesTaverne", chains: [LocalChain] }}>
       <div className="App">
-        <FetchBackend />
-        <FetchBlockNumber />
-        <FetchSmartContract />
+        {/* <FetchBackend /> */}
+        {/* <FetchBlockNumber /> */}
+        {/* <FetchSmartContract /> */}
         <ButtonParticpateScratchCard />
         <div
           style={{ border: "2px solid green", margin: 20, borderRadius: 10 }}
