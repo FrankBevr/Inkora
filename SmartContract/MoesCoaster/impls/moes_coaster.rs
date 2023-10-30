@@ -211,7 +211,7 @@ pub mod moes_coaster {
         fn generate_random_number() {
             //     let contract_balance = 100;
             //     let accounts = default_accounts();
-            //     let moes_coaster = create_contract(contract_balance);
+            //     let mut moes_coaster = create_contract(contract_balance);
 
             // 🤔🤔🤔🤔🤔⚠️❓
             // let result = crate::traits::moes_coaster::MoesCoaster::generate_random_number(

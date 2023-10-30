@@ -6,17 +6,12 @@ const ButtonParticpateScratchCard = () => {
   const { account, connect, disconnect } = useWallet();
   const wallets = useAllWallets();
 
-  const CONTRACT_ADDRESS = "5ChLssFoi5Jm2u2gDXLNfNtnWqJz1sY1s9W9QoDpQPirtQWF";
+  const CONTRACT_ADDRESS = "5H1LoNoxub4WpnViTj7DtkKS7v8oiFbJYPAk9xTmUAvnnY3K";
   const contract = useContract(CONTRACT_ADDRESS, metadata, "localnode");
-  const getIpfsLink = useCall(contract, "getIpfsLink");
-  const participate = useCall(contract, "participateScratchCard")
-
+  const participate = useTx(contract, "moesCoaster::participateScratchCard")
 
   const scratchIt = async () => {
-    const result = await getIpfsLink.send()
-    console.log(result.value.decoded)
-    const resultB = await participate.send([5], { value: "400000000000000000" })
-    console.log(resultB.value.decoded)
+    participate.signAndSend([5], {value:"100000000000000000"})
   };
 
   if (!account) {

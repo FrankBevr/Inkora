@@ -1,6 +1,6 @@
 {
   "source": {
-    "hash": "0x9d186f56fa334c9ab142f59f25f8243722a5d19d3e599f548b5d76f20dcb45f4",
+    "hash": "0x9862cc7123375629341e06115c9d36ce862e9f60e0ede386ad344132ea02414a",
     "language": "ink! 4.3.0",
     "compiler": "rustc 1.75.0-nightly",
     "build_info": {
@@ -33,7 +33,7 @@
             "ink_primitives",
             "ConstructorResult"
           ],
-          "type": 2
+          "type": 5
         },
         "selector": "0x9bae9d5e"
       }
@@ -44,13 +44,13 @@
         "displayName": [
           "AccountId"
         ],
-        "type": 14
+        "type": 2
       },
       "balance": {
         "displayName": [
           "Balance"
         ],
-        "type": 9
+        "type": 11
       },
       "blockNumber": {
         "displayName": [
@@ -84,14 +84,14 @@
         "ink",
         "LangError"
       ],
-      "type": 4
+      "type": 7
     },
     "messages": [
       {
         "args": [],
         "default": false,
         "docs": [],
-        "label": "get_ipfs_link",
+        "label": "MoesCoaster::get_ipfs_link",
         "mutates": false,
         "payable": false,
         "returnType": {
@@ -99,9 +99,9 @@
             "ink",
             "MessageResult"
           ],
-          "type": 5
+          "type": 8
         },
-        "selector": "0xa43dade4"
+        "selector": "0xdce99eea"
       },
       {
         "args": [
@@ -111,13 +111,13 @@
               "displayName": [
                 "u8"
               ],
-              "type": 6
+              "type": 4
             }
           }
         ],
         "default": false,
         "docs": [],
-        "label": "participate_scratch_card",
+        "label": "MoesCoaster::participate_scratch_card",
         "mutates": true,
         "payable": true,
         "returnType": {
@@ -125,15 +125,15 @@
             "ink",
             "MessageResult"
           ],
-          "type": 7
+          "type": 9
         },
-        "selector": "0x449b9eaf"
+        "selector": "0xfe8486cb"
       },
       {
         "args": [],
         "default": false,
         "docs": [],
-        "label": "feed_me",
+        "label": "MoesCoaster::feed_me",
         "mutates": false,
         "payable": true,
         "returnType": {
@@ -141,9 +141,9 @@
             "ink",
             "MessageResult"
           ],
-          "type": 2
+          "type": 5
         },
-        "selector": "0x3c1503b5"
+        "selector": "0x4818ccc9"
       },
       {
         "args": [
@@ -153,13 +153,13 @@
               "displayName": [
                 "Balance"
               ],
-              "type": 9
+              "type": 11
             }
           }
         ],
         "default": false,
         "docs": [],
-        "label": "puke_it",
+        "label": "MoesCoaster::puke_it",
         "mutates": false,
         "payable": false,
         "returnType": {
@@ -167,9 +167,9 @@
             "ink",
             "MessageResult"
           ],
-          "type": 11
+          "type": 13
         },
-        "selector": "0xe530820c"
+        "selector": "0x2c7f7609"
       },
       {
         "args": [
@@ -179,13 +179,13 @@
               "displayName": [
                 "u8"
               ],
-              "type": 6
+              "type": 4
             }
           }
         ],
         "default": false,
         "docs": [],
-        "label": "generate_random_number",
+        "label": "MoesCoaster::generate_random_number",
         "mutates": true,
         "payable": false,
         "returnType": {
@@ -193,25 +193,25 @@
             "ink",
             "MessageResult"
           ],
-          "type": 13
+          "type": 15
         },
-        "selector": "0xcda64f7a"
+        "selector": "0x07c79d25"
       },
       {
         "args": [],
         "default": false,
         "docs": [],
-        "label": "feed_me_randomly",
+        "label": "MoesCoaster::feed_me_randomly",
         "mutates": true,
-        "payable": true,
+        "payable": false,
         "returnType": {
           "displayName": [
             "ink",
             "MessageResult"
           ],
-          "type": 7
+          "type": 9
         },
-        "selector": "0xed3ea9d7"
+        "selector": "0x0c70c1b8"
       },
       {
         "args": [
@@ -221,13 +221,13 @@
               "displayName": [
                 "u128"
               ],
-              "type": 9
+              "type": 11
             }
           }
         ],
         "default": false,
         "docs": [],
-        "label": "divide_by_100",
+        "label": "MoesCoaster::divide_by_100",
         "mutates": false,
         "payable": false,
         "returnType": {
@@ -235,9 +235,9 @@
             "ink",
             "MessageResult"
           ],
-          "type": 7
+          "type": 9
         },
-        "selector": "0x89bc298b"
+        "selector": "0x375a4b1a"
       },
       {
         "args": [
@@ -247,7 +247,7 @@
               "displayName": [
                 "AccountId"
               ],
-              "type": 14
+              "type": 2
             }
           },
           {
@@ -262,7 +262,7 @@
         ],
         "default": false,
         "docs": [],
-        "label": "get_address",
+        "label": "MoesCoaster::get_address",
         "mutates": false,
         "payable": false,
         "returnType": {
@@ -272,7 +272,33 @@
           ],
           "type": 16
         },
-        "selector": "0xd259f7ba"
+        "selector": "0xa44d778a"
+      },
+      {
+        "args": [
+          {
+            "label": "new_owner",
+            "type": {
+              "displayName": [
+                "AccountId"
+              ],
+              "type": 2
+            }
+          }
+        ],
+        "default": false,
+        "docs": [],
+        "label": "MoesCoaster::change_owner",
+        "mutates": true,
+        "payable": false,
+        "returnType": {
+          "displayName": [
+            "ink",
+            "MessageResult"
+          ],
+          "type": 5
+        },
+        "selector": "0xd7802c49"
       }
     ]
   },
@@ -298,6 +324,15 @@
                 }
               },
               "name": "salt"
+            },
+            {
+              "layout": {
+                "leaf": {
+                  "key": "0x00000000",
+                  "ty": 2
+                }
+              },
+              "name": "owner"
             }
           ],
           "name": "MoesCoaster"
@@ -327,12 +362,51 @@
       "id": 2,
       "type": {
         "def": {
+          "composite": {
+            "fields": [
+              {
+                "type": 3,
+                "typeName": "[u8; 32]"
+              }
+            ]
+          }
+        },
+        "path": [
+          "ink_primitives",
+          "types",
+          "AccountId"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "type": {
+        "def": {
+          "array": {
+            "len": 32,
+            "type": 4
+          }
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": {
+        "def": {
+          "primitive": "u8"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": {
+        "def": {
           "variant": {
             "variants": [
               {
                 "fields": [
                   {
-                    "type": 3
+                    "type": 6
                   }
                 ],
                 "index": 0,
@@ -341,7 +415,7 @@
               {
                 "fields": [
                   {
-                    "type": 4
+                    "type": 7
                   }
                 ],
                 "index": 1,
@@ -353,11 +427,11 @@
         "params": [
           {
             "name": "T",
-            "type": 3
+            "type": 6
           },
           {
             "name": "E",
-            "type": 4
+            "type": 7
           }
         ],
         "path": [
@@ -366,7 +440,7 @@
       }
     },
     {
-      "id": 3,
+      "id": 6,
       "type": {
         "def": {
           "tuple": []
@@ -374,7 +448,7 @@
       }
     },
     {
-      "id": 4,
+      "id": 7,
       "type": {
         "def": {
           "variant": {
@@ -393,7 +467,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 8,
       "type": {
         "def": {
           "variant": {
@@ -410,7 +484,7 @@
               {
                 "fields": [
                   {
-                    "type": 4
+                    "type": 7
                   }
                 ],
                 "index": 1,
@@ -426,99 +500,7 @@
           },
           {
             "name": "E",
-            "type": 4
-          }
-        ],
-        "path": [
-          "Result"
-        ]
-      }
-    },
-    {
-      "id": 6,
-      "type": {
-        "def": {
-          "primitive": "u8"
-        }
-      }
-    },
-    {
-      "id": 7,
-      "type": {
-        "def": {
-          "variant": {
-            "variants": [
-              {
-                "fields": [
-                  {
-                    "type": 8
-                  }
-                ],
-                "index": 0,
-                "name": "Ok"
-              },
-              {
-                "fields": [
-                  {
-                    "type": 4
-                  }
-                ],
-                "index": 1,
-                "name": "Err"
-              }
-            ]
-          }
-        },
-        "params": [
-          {
-            "name": "T",
-            "type": 8
-          },
-          {
-            "name": "E",
-            "type": 4
-          }
-        ],
-        "path": [
-          "Result"
-        ]
-      }
-    },
-    {
-      "id": 8,
-      "type": {
-        "def": {
-          "variant": {
-            "variants": [
-              {
-                "fields": [
-                  {
-                    "type": 9
-                  }
-                ],
-                "index": 0,
-                "name": "Ok"
-              },
-              {
-                "fields": [
-                  {
-                    "type": 10
-                  }
-                ],
-                "index": 1,
-                "name": "Err"
-              }
-            ]
-          }
-        },
-        "params": [
-          {
-            "name": "T",
-            "type": 9
-          },
-          {
-            "name": "E",
-            "type": 10
+            "type": 7
           }
         ],
         "path": [
@@ -530,12 +512,96 @@
       "id": 9,
       "type": {
         "def": {
+          "variant": {
+            "variants": [
+              {
+                "fields": [
+                  {
+                    "type": 10
+                  }
+                ],
+                "index": 0,
+                "name": "Ok"
+              },
+              {
+                "fields": [
+                  {
+                    "type": 7
+                  }
+                ],
+                "index": 1,
+                "name": "Err"
+              }
+            ]
+          }
+        },
+        "params": [
+          {
+            "name": "T",
+            "type": 10
+          },
+          {
+            "name": "E",
+            "type": 7
+          }
+        ],
+        "path": [
+          "Result"
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "type": {
+        "def": {
+          "variant": {
+            "variants": [
+              {
+                "fields": [
+                  {
+                    "type": 11
+                  }
+                ],
+                "index": 0,
+                "name": "Ok"
+              },
+              {
+                "fields": [
+                  {
+                    "type": 12
+                  }
+                ],
+                "index": 1,
+                "name": "Err"
+              }
+            ]
+          }
+        },
+        "params": [
+          {
+            "name": "T",
+            "type": 11
+          },
+          {
+            "name": "E",
+            "type": 12
+          }
+        ],
+        "path": [
+          "Result"
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "type": {
+        "def": {
           "primitive": "u128"
         }
       }
     },
     {
-      "id": 10,
+      "id": 12,
       "type": {
         "def": {
           "variant": {
@@ -549,59 +615,10 @@
         },
         "path": [
           "moes_coaster",
-          "moes_coaster",
+          "libs",
+          "errors",
           "BeerTapErr"
         ]
-      }
-    },
-    {
-      "id": 11,
-      "type": {
-        "def": {
-          "variant": {
-            "variants": [
-              {
-                "fields": [
-                  {
-                    "type": 12
-                  }
-                ],
-                "index": 0,
-                "name": "Ok"
-              },
-              {
-                "fields": [
-                  {
-                    "type": 4
-                  }
-                ],
-                "index": 1,
-                "name": "Err"
-              }
-            ]
-          }
-        },
-        "params": [
-          {
-            "name": "T",
-            "type": 12
-          },
-          {
-            "name": "E",
-            "type": 4
-          }
-        ],
-        "path": [
-          "Result"
-        ]
-      }
-    },
-    {
-      "id": 12,
-      "type": {
-        "def": {
-          "primitive": "bool"
-        }
       }
     },
     {
@@ -613,7 +630,7 @@
               {
                 "fields": [
                   {
-                    "type": 6
+                    "type": 14
                   }
                 ],
                 "index": 0,
@@ -622,7 +639,7 @@
               {
                 "fields": [
                   {
-                    "type": 4
+                    "type": 7
                   }
                 ],
                 "index": 1,
@@ -634,11 +651,11 @@
         "params": [
           {
             "name": "T",
-            "type": 6
+            "type": 14
           },
           {
             "name": "E",
-            "type": 4
+            "type": 7
           }
         ],
         "path": [
@@ -650,31 +667,50 @@
       "id": 14,
       "type": {
         "def": {
-          "composite": {
-            "fields": [
-              {
-                "type": 15,
-                "typeName": "[u8; 32]"
-              }
-            ]
-          }
-        },
-        "path": [
-          "ink_primitives",
-          "types",
-          "AccountId"
-        ]
+          "primitive": "bool"
+        }
       }
     },
     {
       "id": 15,
       "type": {
         "def": {
-          "array": {
-            "len": 32,
-            "type": 6
+          "variant": {
+            "variants": [
+              {
+                "fields": [
+                  {
+                    "type": 4
+                  }
+                ],
+                "index": 0,
+                "name": "Ok"
+              },
+              {
+                "fields": [
+                  {
+                    "type": 7
+                  }
+                ],
+                "index": 1,
+                "name": "Err"
+              }
+            ]
           }
-        }
+        },
+        "params": [
+          {
+            "name": "T",
+            "type": 4
+          },
+          {
+            "name": "E",
+            "type": 7
+          }
+        ],
+        "path": [
+          "Result"
+        ]
       }
     },
     {
@@ -695,7 +731,7 @@
               {
                 "fields": [
                   {
-                    "type": 4
+                    "type": 7
                   }
                 ],
                 "index": 1,
@@ -711,7 +747,7 @@
           },
           {
             "name": "E",
-            "type": 4
+            "type": 7
           }
         ],
         "path": [
@@ -728,7 +764,7 @@
               {
                 "fields": [
                   {
-                    "type": 14
+                    "type": 2
                   }
                 ],
                 "index": 0,
@@ -749,7 +785,7 @@
         "params": [
           {
             "name": "T",
-            "type": 14
+            "type": 2
           },
           {
             "name": "E",
@@ -808,8 +844,9 @@
         },
         "path": [
           "moes_coaster",
-          "azns_router",
-          "Error"
+          "libs",
+          "errors",
+          "AznsRouterError"
         ]
       }
     },
@@ -820,7 +857,7 @@
           "composite": {
             "fields": [
               {
-                "type": 15,
+                "type": 3,
                 "typeName": "[u8; 32]"
               }
             ]
