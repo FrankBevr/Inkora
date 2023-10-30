@@ -11,6 +11,8 @@
 |                                               | [Wednesday](/Journey/Wednesday.md) |                                    |
 |                                               | [Thursday](/Journey/Thursday.md)   |                                    |
 |                                               | [Friday](/Journey/Friday.md)       |                                    |
+|                                               | [Saturday-2](/Journey/Saturday-2.md)       |                                    |
+|                                               | [Sunday-2](/Journey/Sunday-2.md)       |                                    |
 
 
 🖱️ **Just click around.**  🖱️ 

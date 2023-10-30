@@ -1,6 +1,6 @@
 # Hallå 🐧
 
-Yesterday was Thursday.
+Yesterday was Friday.
 I made progress on the ink side of things.
 I decided to chunk participate_scratch_card into journey functions.
 Every Journey function teaches me another aspect of participate_scratch_card.

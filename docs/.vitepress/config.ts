@@ -6,7 +6,7 @@ export default {
   themeConfig: {
     nav: [{ text: "Home", link: "/" }],
     logo: "https://use.ink/assets/files/ink-squink-129208fde8d6d4a8474bf71865e3d76b.svg",
-    ignoreDeadLinks: true,
+    // ignoreDeadLinks: true,
     sidebar: [
       {
         text: "The Beginning",
@@ -25,8 +25,8 @@ export default {
           { text: "Wednesday", link: "/Journey/Wednesday" },
           { text: "Thursday", link: "/Journey/Thursday" },
           { text: "Friday", link: "/Journey/Friday" },
-          { text: "Saturday", link: "/Journey/Saturday" },
-          { text: "Sunday", link: "/Journey/Sunday-2" },
+          { text: "Saturday-2", link: "/Journey/Saturday-2" },
+          { text: "Sunday-2", link: "/Journey/Sunday-2" },
         ],
       },
       {
