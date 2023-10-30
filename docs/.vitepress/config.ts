@@ -26,6 +26,7 @@ export default {
           { text: "Thursday", link: "/Journey/Thursday" },
           { text: "Friday", link: "/Journey/Friday" },
           { text: "Saturday", link: "/Journey/Saturday" },
+          { text: "Sunday", link: "/Journey/Sunday-2" },
         ],
       },
       {
