@@ -252,8 +252,14 @@ CLOCK: [2023-10-24 Tue 09:14]--[2023-10-24 Tue 10:21] =>  1:07
 - [X] Add User Interace
 - [X] Complete Ui Things
 
-** TODO [#A] Smart Contract Work & Diverse [11/12]
+** DONE [#A] Smart Contract Work & Diverse [12/12]
 :LOGBOOK:
+CLOCK: [2023-10-30 Mon 20:26]--[2023-10-30 Mon 21:22] =>  0:56
+CLOCK: [2023-10-30 Mon 18:05]--[2023-10-30 Mon 19:48] =>  1:43
+CLOCK: [2023-10-30 Mon 13:09]--[2023-10-30 Mon 14:28] =>  1:19
+CLOCK: [2023-10-30 Mon 11:34]--[2023-10-30 Mon 12:14] =>  0:40
+CLOCK: [2023-10-30 Mon 10:12]--[2023-10-30 Mon 11:25] =>  1:13
+CLOCK: [2023-10-30 Mon 09:23]--[2023-10-30 Mon 10:06] =>  0:43
 CLOCK: [2023-10-30 Mon 08:30]--[2023-10-30 Mon 09:17] =>  0:47
 CLOCK: [2023-10-29 Sun 19:22]--[2023-10-29 Sun 22:10] =>  2:48
 CLOCK: [2023-10-29 Sun 18:15]--[2023-10-29 Sun 19:01] =>  0:46
@@ -284,7 +290,7 @@ CLOCK: [2023-10-26 Thu 18:41]--[2023-10-26 Thu 19:21] =>  0:40
 - [X] add ipfs mockUp
 - [X] add test
 - [X] make it compile
-- [-] add participate_scratch_card
+- [X] add participate_scratch_card
   - [X] chunk it down in JourneyFunction
   - [X] add feedMe() function
   - [X] add pukeIt() function
@@ -315,7 +321,31 @@ CLOCK: [2023-10-26 Thu 18:41]--[2023-10-26 Thu 19:21] =>  0:40
   - [X] Add ButtonParticipateScratchCard to Frontend
   - [X] Add Saturday.md
   - [X] Update README.md for submission checkout
-  - [X]  Add Sunday-2.md
-  - [ ] Send a value along side with function call
-  - [ ] clean up
-  - [ ] make video
+  - [X] Add Sunday-2.md
+  - [X] Send a value along side with function call
+  - [X] clean up
+  - [X] make video
+  - [X] add updateOwner to lib.rs
+  - [X] update docs to make linking right
+  - [X] resture contract add impls, traits, libs
+  - [X] make tests work again
+  - [X] make fu**ing Btn work
+
+** TODO [#B] Make it nicey [0/4]
+:LOGBOOK:
+CLOCK: [2023-10-30 Mon 20:50]--[2023-10-30 Mon 22:12] =>  1:22
+CLOCK: [2023-10-30 Mon 21:24]--[2023-10-30 Mon 21:27] =>  0:03
+:END:
+- [ ] Get rid of uncessary chunk
+- [ ] Find or make Mushroom 3D
+- [ ] Upload Mushroom to ipfs
+- [ ] Copy ipfs hash, paste it in
+- [ ] Test it via terminal
+- [ ] Increase Functionality moes-taverne.azero
+  - [ ] Get message via azns router
+  - [ ] ...
+- [ ] Styling
+  - [ ] Get Styles in Order
+  - [ ] Make Button nicey
+- [ ] Make Video-2
+- [ ] Write Monday-2
