@@ -1,4 +1,5 @@
 .column {
+  order: dashed white 4px;
   background: var(--COLOR-GRAY-DARK);
   min-height: 20rem;
   color: #fff;
@@ -52,4 +53,9 @@
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+}
+
+.column.drop{
+  border: dashed white 4px;
+  border-color: white;
 }

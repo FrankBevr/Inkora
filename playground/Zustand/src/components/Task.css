@@ -9,6 +9,7 @@
   align-items: space-between;
   justify-content: space-between;
   margin-bottom: 0.5rem;
+  cursor: move;
 }
 
 .bottomWrapper {
