@@ -1,9 +1,9 @@
-[submodule "playground/playground/mind-ar-js-react"]
-	path = playground/playground/mind-ar-js-react
-	url = https://github.com/hiukim/mind-ar-js-react.git
 [submodule "playground/mind-ar-js-react"]
 	path = playground/mind-ar-js-react
 	url = https://github.com/hiukim/mind-ar-js-react.git
 [submodule "playground/dennis"]
 	path = playground/dennis
 	url = https://github.com/scio-labs/inkathon.git
+[submodule "playground/Zustando"]
+	path = playground/Zustando
+	url = https://github.com/N-Ziermann-YT/Kanban-Zustand-Course.git
