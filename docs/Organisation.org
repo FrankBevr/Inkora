@@ -331,12 +331,31 @@ CLOCK: [2023-10-26 Thu 18:41]--[2023-10-26 Thu 19:21] =>  0:40
   - [X] make tests work again
   - [X] make fu**ing Btn work
 
-** TODO [#B] Make it nicey [0/4]
+** TODO [#B] Make it nicey [5/17]
 :LOGBOOK:
+CLOCK: [2023-10-31 Tue 17:32]
+CLOCK: [2023-10-31 Tue 17:20]--[2023-10-31 Tue 17:29] =>  0:09
+CLOCK: [2023-10-31 Tue 16:37]--[2023-10-31 Tue 17:12] =>  0:35
+CLOCK: [2023-10-31 Tue 15:23]--[2023-10-31 Tue 16:25] =>  1:02
+CLOCK: [2023-10-31 Tue 12:10]--[2023-10-31 Tue 12:17] =>  0:07
+CLOCK: [2023-10-31 Tue 10:12]--[2023-10-31 Tue 12:06] =>  1:54
+CLOCK: [2023-10-31 Tue 09:05]--[2023-10-31 Tue 09:59] =>  0:54
+CLOCK: [2023-10-31 Tue 07:42]--[2023-10-31 Tue 08:47] =>  1:05
 CLOCK: [2023-10-30 Mon 20:50]--[2023-10-30 Mon 22:12] =>  1:22
 CLOCK: [2023-10-30 Mon 21:24]--[2023-10-30 Mon 21:27] =>  0:03
 :END:
-- [ ] Get rid of uncessary chunk
+- [X] Get rid of uncessary chunk
+- [X] Reargange Frontend (heavier restructure)
+- [X] learn zustand
+  - [X] add basics
+  - [X] storing tasks
+  - [X] displaying tasks
+  - [X] adding tasks
+  - [X] deleting tasks
+  - [X] moving tasks
+  - [X] zustand middleware
+  - [X] unit tests via vitest
+  - [X] advancded Zustand
 - [ ] Find or make Mushroom 3D
 - [ ] Upload Mushroom to ipfs
 - [ ] Copy ipfs hash, paste it in
@@ -348,4 +367,10 @@ CLOCK: [2023-10-30 Mon 21:24]--[2023-10-30 Mon 21:27] =>  0:03
   - [ ] Get Styles in Order
   - [ ] Make Button nicey
 - [ ] Make Video-2
-- [ ] Write Monday-2
+- [X] Write Monday-2
+- [X] Write Tuesday-2
+- [ ] participate in Polka Ambo Call
+- [ ] Add Zustand for StateManagement
+- [ ] Create Store,
+- [ ] display store value
+- [ ] increase something on click

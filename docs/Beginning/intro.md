@@ -13,6 +13,8 @@
 |                                               | [Friday](/Journey/Friday.md)       |                                    |
 |                                               | [Saturday-2](/Journey/Saturday-2.md)       |                                    |
 |                                               | [Sunday-2](/Journey/Sunday-2.md)       |                                    |
+|                                               | [Monday-2](/Journey/Monday-2.md)       |                                    |
+|                                               | [Tuesday-2](/Journey/Tuesday-2.md)       |                                    |
 
 
 🖱️ **Just click around.**  🖱️ 

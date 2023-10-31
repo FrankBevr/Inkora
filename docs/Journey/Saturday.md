@@ -4,9 +4,13 @@ Yesterday was Saturday and I write a a quick Recap.
 
 ### Intro
 
-On these kinds of Projects I chunk them usually. Take a piece of time that i like to commit and throw it against it. In this case 1 week.
-Before I start try to particpates on Workshops with the hope I learn something which i was not aware of it.
-Thats always the case, so declaring victory is already set in stone. ��
+On these kinds of Projects I chunk them usually.  
+Take a piece of time that i like to commit and throw it against it. In this case 1 week.  
+I try to participate in the workshops that are getting offered.  
+Its quite likely I learn something, which I dont know.  
+Today I recaped my Figma Skills, with creating props to define compoents and etablish strucutre.  
+I recap also my emacs knowlege to create one Organisational File to keep some kind of track. `.org` Files should have everything.
+Quite neat format, but all these shortcuts, yikes 😅
 
 :::details Recap - Details
 
@@ -14,7 +18,7 @@ Thats always the case, so declaring victory is already set in stone. ��
 
 - [x] I reorganised the current Repo
 - [x] Add Vitepress to make a easy BackUp if something goes wrong.
-- [x] I recap features of .org Files 
+- [x] I recap features of .org Files
 - [x] I add Organisation.org
 - [x] I wrote down a rough roadmap to get something running
 - [x] I chunk the Roadmap down in smaller parts
@@ -31,6 +35,6 @@ Thats always the case, so declaring victory is already set in stone. ��
 
 ### Summa Summarum
 
-- Added Organisation 
-- Setted Up Figma 
+- Added Organisation
+- Setted Up Figma
 - Added Design System,

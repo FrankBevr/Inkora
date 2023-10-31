@@ -28,6 +28,7 @@ export default {
           { text: "Saturday-2", link: "/Journey/Saturday-2" },
           { text: "Sunday-2", link: "/Journey/Sunday-2" },
           { text: "Monday-2", link: "/Journey/Monday-2" },
+          { text: "Tuesday-2", link: "/Journey/Tuesday-2" },
         ],
       },
       {
@@ -50,6 +51,7 @@ export default {
             link: "/Notes/uladzislau_deep_dive_ink_storage",
           },
           { text: "Org Recap", link: "/Notes/org_recap" },
+          { text: "Zustand Notes", link: "/Notes/Zustand" },
         ],
       },
     ],
