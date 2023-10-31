@@ -24,13 +24,13 @@
   border-radius: 4px;
 }
 
-.PLANNED{
+.PLANNED {
   background: var(--COLOR-GRAY-LIGHT);
 }
-.ONGOING{
+.ONGOING {
   background: var(--COLOR-ONGOING);
 }
-.DONE{
+.DONE {
   background: var(--COLOR-DONE);
 }
 

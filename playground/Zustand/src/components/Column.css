@@ -14,10 +14,10 @@
 .titleWrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
 }
 
-.titleWrapper button{
+.titleWrapper button {
   all: unset;
   color: black;
   background: white;
@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-.titleWrapper button:hover{
+.titleWrapper button:hover {
   background: var(--COLOR-GRAY-LIGHT);
 }
 .Modal {
@@ -55,7 +55,7 @@
   border-radius: 4px;
 }
 
-.column.drop{
+.column.drop {
   border: dashed white 4px;
   border-color: white;
 }

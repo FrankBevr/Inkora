@@ -1,9 +1,12 @@
-import { useMemo } from 'react'
-import { useStore } from './store'
-import { shallow } from 'zustand/shallow'
+import { useMemo } from "react";
+import { useStore } from "./store";
+import { shallow } from "zustand/shallow";
 
 const Temp = ({ state }) => {
-  const tasks = useStore(store => store.tasks.filter(task => task.state === state), shallow)
+  const tasks = useStore(
+    (store) => store.tasks.filter((task) => task.state === state),
+    shallow,
+  );
   // const tasks = useStore(store => store.tasks.filter(task => task.state === state), (prev, next) => {
   //   const longest = prev.length > next.length ? prev.length : next.length
   //   for (let i = 0; i < longest; i++) {
@@ -16,6 +19,6 @@ const Temp = ({ state }) => {
   //   () => tasks.filter(task => task.state === state),
   //   [tasks, state]
   // )
-}
+};
 
-export default Temp
+export default Temp;
