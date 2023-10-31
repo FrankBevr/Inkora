@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import { MindARThree } from "mind-ar/dist/mindar-image-three.prod.js";
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import * as THREE from "three";
 
 export default () => {
@@ -32,13 +31,6 @@ export default () => {
       opacity: 0.5,
     });
     const cube = new THREE.Mesh(geometry2, material2);
-    //
-    // const modelUrl = "./Power_Up.gltf"
-    // const loader = new GLTFLoader();
-    // loader.load(modelUrl, (gltf) => {
-    //   const model = gltf.scene;
-    //   anchor.group.add(model);
-    // });
 
     anchor.group.add(plane);
     anchor.group.add(cube);

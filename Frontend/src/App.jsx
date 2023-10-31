@@ -1,12 +1,7 @@
-import React, { useState } from "react";
-import "./App.css";
-import MindARThreeViewer from "./components/mindar-three-viewer";
-import FetchBackend from "./components/FetchBackend.jsx";
-import FetchSmartContract from "./components/FetchSmartContract";
-import FetchBlockNumber from "./components/FetchBlockNumber";
-import ButtonParticpateScratchCard from "./components/ButtonParticipateScratchCard";
 import { UseInkProvider } from "useink";
 import { Custom } from "useink/chains";
+import ArExperience from "./components/ArExperience";
+import ScratchExperience from "./components/ScratchExperience";
 
 const LocalChain = {
   ...Custom,
@@ -16,44 +11,11 @@ const LocalChain = {
 };
 
 const App = () => {
-  const [started, setStarted] = useState(null);
-
   return (
     <UseInkProvider config={{ dappName: "MoesTaverne", chains: [LocalChain] }}>
       <div className="App">
-        <FetchBackend />
-        <FetchBlockNumber />
-        <FetchSmartContract />
-        <ButtonParticpateScratchCard />
-        <div
-          style={{ border: "2px solid green", margin: 20, borderRadius: 10 }}
-        >
-          <div className="control-buttons">
-            {started === null && (
-              <button
-                onClick={() => {
-                  setStarted("three");
-                }}
-              >
-                Start ThreeJS version
-              </button>
-            )}
-            {started !== null && (
-              <button
-                onClick={() => {
-                  setStarted(null);
-                }}
-              >
-                Stop
-              </button>
-            )}
-          </div>
-          {started === "three" && (
-            <div className="container">
-              <MindARThreeViewer />
-            </div>
-          )}
-        </div>
+        <ScratchExperience />
+        <ArExperience />
       </div>
     </UseInkProvider>
   );

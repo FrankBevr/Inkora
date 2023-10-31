@@ -1,11 +1,11 @@
 import { useWallet, useAllWallets, useCallSubscription } from "useink";
 
 import { useCall, useContract, useTx } from "useink";
-import metadata from "./flipper.json";
+import metadata from "../../assets/flipper.json";
 import { useEffect, useState } from "react";
 import { pickDecoded } from "useink/utils";
 
-const FetchSmartContract = () => {
+const ViewFlipperContract = () => {
   const [flipValue, setFlipValue] = useState(null);
   const [autoUpdate, setAutoUpdate] = useState(false);
   const { account, connect, disconnect } = useWallet();
@@ -94,4 +94,4 @@ const FetchSmartContract = () => {
     </div>
   );
 };
-export default FetchSmartContract;
+export default ViewFlipperContract;

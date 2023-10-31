@@ -1,9 +1,7 @@
+import { useEffect, useState } from "react";
 
-import { useEffect, useRef, useState } from "react";
-
-const FetchBackend = () => {
+const ViewBackend = () => {
   const [backendData, setBackendData] = useState({});
-  const title = useRef();
 
   useEffect(() => {
     async function fetcho() {
@@ -31,4 +29,4 @@ const FetchBackend = () => {
   );
 };
 
-export default FetchBackend;
+export default ViewBackend;

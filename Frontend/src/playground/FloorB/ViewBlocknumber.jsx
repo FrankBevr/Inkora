@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useBlockHeader } from "useink";
 
-const BlockNumber = () => {
+const ViewBlocknumber = () => {
   const [blockNumber, setBlockNumber] = useState(null);
   let localnode = useBlockHeader("localnode");
 
@@ -22,4 +22,4 @@ const BlockNumber = () => {
   );
 };
 
-export default BlockNumber;
+export default ViewBlocknumber;
