@@ -1,15 +1,18 @@
 import { useExampleStore } from "./../../store/store";
 import { useState } from "react";
+import './ViewStore.css'
 
 const ViewStore = () => {
   const data = useExampleStore((store) => store.data);
   const addData = useExampleStore((store) => store.addData);
   const updateData = useExampleStore((store) => store.updateData);
+  const deleteData = useExampleStore((store) => store.deleteData);
 
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
   const [food, setFood] = useState("");
   const [id, setId] = useState("");
+  const [deleteId, setDeleteId] = useState("");
 
   const handleSubmit = () => {
     addData(name, Number(age), food);
@@ -25,8 +28,14 @@ const ViewStore = () => {
     setAge("");
     setFood("");
   };
+
+  const handleDelete = () => {
+    deleteData(Number(deleteId));
+    setDeleteId("");
+  };
   return (
     <>
+    <div className="wrapper">
       <h1>ViewStore</h1>
       {data.map((item, index) => (
         <div key={index}>
@@ -37,6 +46,8 @@ const ViewStore = () => {
           <hr></hr>
         </div>
       ))}
+    </div>
+    <div className="wrapper">
       <h2>Add Data to Store (hardcoded)</h2>
       <p>Add </p>
       <code>&#123; name: Herbert, age: 30, food: "chicken" &#125;</code>
@@ -48,6 +59,8 @@ const ViewStore = () => {
       >
         Submit
       </button>
+    </div>
+    <div className="wrapper">
       <h2>Add Data to Store (via input)</h2>
       <input
         type="text"
@@ -68,7 +81,8 @@ const ViewStore = () => {
         placeholder="Favorite Food"
       />
       <button onClick={handleSubmit}>Submit</button>
-      <h2>Update Data to Store</h2>
+    </div>
+    <div className="wrapper">
       <h2>Update Data to Store</h2>
       <input
         type="number"
@@ -95,7 +109,17 @@ const ViewStore = () => {
         placeholder="Favorite Food"
       />
       <button onClick={handleUpdate}>Update</button>
+    </div>
+    <div className="wrapper">
       <h2>Delete Data to Store</h2>
+      <input
+        type="number"
+        value={deleteId}
+        onChange={(e) => setDeleteId(e.target.value)}
+        placeholder="ID to delete"
+      />
+      <button onClick={handleDelete}>Delete</button>
+    </div>
     </>
   );
 };

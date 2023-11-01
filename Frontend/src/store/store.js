@@ -15,5 +15,9 @@ export const useExampleStore = create((set) => ({
       );
       return { data: newData };
     }),
+  deleteData: (id) =>
+    set((store) => {
+      const newData = store.data.filter((item) => item.id !== id);
+      return { data: newData };
+    }),
 }));
-
