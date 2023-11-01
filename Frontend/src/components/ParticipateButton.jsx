@@ -13,11 +13,11 @@ const ParticipateButton = () =>{
   };
 
     return(
-    <div style={{ border: "2px solid green", margin: 20, borderRadius: 10 }}>
+    <>
       <p>You are connected as {account?.name || account.address}</p>
       <button onClick={disconnect}>Disconnect Wallet</button>
       <button onClick={scratchIt}>Scratch Me</button>
-    </div>
+    </>
     )
 }
 export default ParticipateButton

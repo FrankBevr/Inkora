@@ -4,6 +4,7 @@ import ArExperience from "./components/ArExperience";
 import ScratchExperience from "./components/ScratchExperience";
 import { useViewState } from "./store/store"; // import the ViewState store
 import { useState } from "react";
+import PrimaryButton from "./components/PrimaryButton";
 
 const LocalChain = {
   ...Custom,
@@ -30,41 +31,47 @@ const App = () => {
           <ScratchExperience />
         )}
         <div className="button-container">
-          <p>Current Index: {currentIndex}</p>
-          <button
+          {
+          /* <p>Current Index: {currentIndex}</p>
+          <PrimaryButton
+            label={"Forward"}
+            iconLeftVis={true}
             onClick={() => {
               forward();
             }}
           >
             Forward
-          </button>
-          <button
+          </PrimaryButton>
+          <PrimaryButton
+            label={"Backward"}
+            iconRightVis={true}
             onClick={() => {
               backward();
             }}
           >
             Backward
-          </button>
-          <div className="buttonContainer">
-            {started === null && (
-              <button
-                onClick={() => {
-                  setStarted("three");
-                }}
-              >
-                Start Coaster View
-              </button>
-            )}
-            {started !== null && (
-              <button
-                onClick={() => {
-                  setStarted(null);
-                }}
-              >
-                Stop Coaster View
-              </button>
-            )}
-          </div>
+          </PrimaryButton>
+        */}
+          {started === null && (
+            <PrimaryButton
+              label={"View Coaster"}
+              onClick={() => {
+                setStarted("three");
+              }}
+            >
+              View Coaster
+            </PrimaryButton>
+          )}
+          {started !== null && (
+            <PrimaryButton
+              label={"Stop View"}
+              onClick={() => {
+                setStarted(null);
+              }}
+            >
+              Stop View
+            </PrimaryButton>
+          )}
         </div>
       </UseInkProvider>
       <div className="frame"></div>
