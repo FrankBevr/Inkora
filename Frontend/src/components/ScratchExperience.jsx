@@ -1,4 +1,4 @@
-import { useWallet} from "useink";
+import { useWallet } from "useink";
 import SelectWalletView from "./SelectWalletView";
 import ParticipateButton from "./ParticipateButton";
 
@@ -7,11 +7,15 @@ const ScratchExperience = () => {
 
   if (!account) {
     return (
-      <SelectWalletView/>
+      <div className="button-container">
+        <SelectWalletView />
+      </div>
     );
   }
   return (
-    <ParticipateButton/>
+    <div className="button-container">
+      <ParticipateButton />
+    </div>
   );
 };
 

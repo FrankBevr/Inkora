@@ -22,16 +22,19 @@ export const useExampleStore = create((set) => ({
     }),
 }));
 
+
 export const useViewState = create((set) => ({
   currentIndex: 0,
+  maxIndex: 2,
+  setMaxIndex: (maxIndex) => set({ maxIndex }),
   forward: () =>
-    set((state, store) => {
-      const nextIndex = (state.currentIndex + 1) % store.data.length;
+    set((state) => {
+      const nextIndex = (state.currentIndex + 1) % state.maxIndex;
       return { currentIndex: nextIndex };
     }),
   backward: () =>
-    set((state, store) => {
-      const prevIndex = (state.currentIndex - 1 + store.data.length) % store.data.length;
+    set((state) => {
+      const prevIndex = (state.currentIndex - 1 + state.maxIndex) % state.maxIndex;
       return { currentIndex: prevIndex };
     }),
 }));
