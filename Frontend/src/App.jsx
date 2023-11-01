@@ -2,7 +2,7 @@ import { UseInkProvider } from "useink";
 import { Custom } from "useink/chains";
 import ArExperience from "./components/ArExperience";
 import ScratchExperience from "./components/ScratchExperience";
-import ViewStore from './playground/FloorB/ViewStore'
+import { useViewState } from "./store/store"; // import the ViewState store
 
 const LocalChain = {
   ...Custom,
@@ -12,14 +12,14 @@ const LocalChain = {
 };
 
 const App = () => {
+  const currentIndex = useViewState((state) => state.currentIndex); // get the currentIndex state
+
   return (
     <UseInkProvider config={{ dappName: "MoesTaverne", chains: [LocalChain] }}>
       <div className="App">
-        {/*
         <ScratchExperience />
         <ArExperience />
-      */}
-        <ViewStore />
+        <p>Current Index: {currentIndex}</p> {/* display the currentIndex */}
       </div>
     </UseInkProvider>
   );

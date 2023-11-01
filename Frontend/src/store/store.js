@@ -21,3 +21,17 @@ export const useExampleStore = create((set) => ({
       return { data: newData };
     }),
 }));
+
+export const useViewState = create((set) => ({
+  currentIndex: 0,
+  forward: () =>
+    set((state, store) => {
+      const nextIndex = (state.currentIndex + 1) % store.data.length;
+      return { currentIndex: nextIndex };
+    }),
+  backward: () =>
+    set((state, store) => {
+      const prevIndex = (state.currentIndex - 1 + store.data.length) % store.data.length;
+      return { currentIndex: prevIndex };
+    }),
+}));
