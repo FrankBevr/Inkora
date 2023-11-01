@@ -20,7 +20,7 @@ Along the way etablish some kind of structure.
 Because my personal goal is to create a Web3AR Shop which is full of web3ar products.    
 A Web3AR Product, is a simple Product combined with a attached Hologram, which lives on Chain.  
 > Example T-Shirt:   
-> If a friend hovers over it, they see wings on your back. These wings are your Wings. They live on Chain.    
+> If a friend hovers over it, they see dragon flying out of your chest. This Dragon your Dragon. He lives on Chain.    
 > Is it the new revolutionary idea ... nahh .., but real products, sells.  🛒
 
 ### Motiviation

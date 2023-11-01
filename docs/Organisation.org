@@ -331,9 +331,20 @@ CLOCK: [2023-10-26 Thu 18:41]--[2023-10-26 Thu 19:21] =>  0:40
   - [X] make tests work again
   - [X] make fu**ing Btn work
 
-** TODO [#B] Make it nicey [5/17]
+** TODO [#B] Make it nicey [20/26]
 :LOGBOOK:
-CLOCK: [2023-10-31 Tue 17:32]
+CLOCK: [2023-11-01 Wed 23:02]
+CLOCK: [2023-11-01 Wed 21:06]--[2023-11-01 Wed 21:10] =>  0:04
+CLOCK: [2023-11-01 Wed 19:48]--[2023-11-01 Wed 21:02] =>  1:14
+CLOCK: [2023-11-01 Wed 19:07]--[2023-11-01 Wed 19:42] =>  0:35
+CLOCK: [2023-11-01 Wed 18:08]--[2023-11-01 Wed 18:34] =>  0:26
+CLOCK: [2023-11-01 Wed 17:07]--[2023-11-01 Wed 18:00] =>  0:53
+CLOCK: [2023-11-01 Wed 11:01]--[2023-11-01 Wed 11:44] =>  0:43
+CLOCK: [2023-11-01 Wed 10:12]--[2023-11-01 Wed 10:43] =>  0:31
+CLOCK: [2023-11-01 Wed 08:01]--[2023-11-01 Wed 09:28] =>  1:27
+CLOCK: [2023-10-31 Tue 19:14]--[2023-10-31 Tue 21:21] =>  2:07
+CLOCK: [2023-10-31 Tue 18:01]--[2023-10-31 Tue 19:00] =>  0:59
+CLOCK: [2023-10-31 Tue 17:32]--[2023-10-31 Tue 17:58] =>  0:26
 CLOCK: [2023-10-31 Tue 17:20]--[2023-10-31 Tue 17:29] =>  0:09
 CLOCK: [2023-10-31 Tue 16:37]--[2023-10-31 Tue 17:12] =>  0:35
 CLOCK: [2023-10-31 Tue 15:23]--[2023-10-31 Tue 16:25] =>  1:02
@@ -363,14 +374,24 @@ CLOCK: [2023-10-30 Mon 21:24]--[2023-10-30 Mon 21:27] =>  0:03
 - [ ] Increase Functionality moes-taverne.azero
   - [ ] Get message via azns router
   - [ ] ...
-- [ ] Styling
-  - [ ] Get Styles in Order
-  - [ ] Make Button nicey
+- [X] Styling
+  - [X] Get Styles in Order
+  - [X] Make Button nicey
 - [ ] Make Video-2
 - [X] Write Monday-2
 - [X] Write Tuesday-2
-- [ ] participate in Polka Ambo Call
-- [ ] Add Zustand for StateManagement
-- [ ] Create Store,
-- [ ] display store value
-- [ ] increase something on click
+- [X] participate in Polka Ambo Call
+- [X] Add Zustand for StateManagement
+- [X] Create Store,
+- [X] display store value
+- [X] increase something on click
+- [X] validator work, check apprearing issues
+- [X] vali make it run again
+- [X] add something to store
+- [X] update something to store
+- [X] delete something to store
+- [X] add store for viewstate
+- [X] center all that stuff, establish kind of clickworflow
+- [X] add css from simplistic desgin system
+- [X] create Button Component
+- [ ] write Wednesday-2.md
