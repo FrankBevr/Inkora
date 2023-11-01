@@ -2,6 +2,7 @@ import { UseInkProvider } from "useink";
 import { Custom } from "useink/chains";
 import ArExperience from "./components/ArExperience";
 import ScratchExperience from "./components/ScratchExperience";
+import ViewStore from './playground/FloorB/ViewStore'
 
 const LocalChain = {
   ...Custom,
@@ -14,8 +15,11 @@ const App = () => {
   return (
     <UseInkProvider config={{ dappName: "MoesTaverne", chains: [LocalChain] }}>
       <div className="App">
+        {/*
         <ScratchExperience />
         <ArExperience />
+      */}
+        <ViewStore />
       </div>
     </UseInkProvider>
   );
