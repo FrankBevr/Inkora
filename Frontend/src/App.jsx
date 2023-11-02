@@ -67,7 +67,7 @@ const App = () => {
               View Coaster
             </PrimaryButton>
           )}
-          {started !== null &&  currentIndex === 0 && (
+          {started !== null && currentIndex === 0 && (
             <PrimaryButton
               label={"Stop"}
               labelVis={true}

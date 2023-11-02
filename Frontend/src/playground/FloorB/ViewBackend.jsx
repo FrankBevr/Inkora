@@ -17,11 +17,11 @@ const ViewBackend = () => {
   }, []);
 
   return (
-    <div style={{border: "2px solid green", margin: 20, borderRadius: 10 }}>
+    <div style={{ border: "2px solid green", margin: 20, borderRadius: 10 }}>
       <h1>FetchBackend - Component</h1>
       <h2>Title:</h2>
       <p>{backendData.title}</p>
-      <h2>Why:</h2> 
+      <h2>Why:</h2>
       <p>{backendData.why}</p>
       <h2>inUse:</h2>
       <p>{backendData.inUse ? "true" : "false"}</p>

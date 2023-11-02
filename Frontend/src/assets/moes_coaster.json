@@ -16,9 +16,7 @@
   "contract": {
     "name": "moes_coaster",
     "version": "0.1.0",
-    "authors": [
-      "Frank Dierolf <frank_dierolf@web.de>"
-    ]
+    "authors": ["Frank Dierolf <frank_dierolf@web.de>"]
   },
   "spec": {
     "constructors": [
@@ -29,10 +27,7 @@
         "label": "new",
         "payable": false,
         "returnType": {
-          "displayName": [
-            "ink_primitives",
-            "ConstructorResult"
-          ],
+          "displayName": ["ink_primitives", "ConstructorResult"],
           "type": 5
         },
         "selector": "0x9bae9d5e"
@@ -41,49 +36,34 @@
     "docs": [],
     "environment": {
       "accountId": {
-        "displayName": [
-          "AccountId"
-        ],
+        "displayName": ["AccountId"],
         "type": 2
       },
       "balance": {
-        "displayName": [
-          "Balance"
-        ],
+        "displayName": ["Balance"],
         "type": 11
       },
       "blockNumber": {
-        "displayName": [
-          "BlockNumber"
-        ],
+        "displayName": ["BlockNumber"],
         "type": 20
       },
       "chainExtension": {
-        "displayName": [
-          "ChainExtension"
-        ],
+        "displayName": ["ChainExtension"],
         "type": 21
       },
       "hash": {
-        "displayName": [
-          "Hash"
-        ],
+        "displayName": ["Hash"],
         "type": 19
       },
       "maxEventTopics": 4,
       "timestamp": {
-        "displayName": [
-          "Timestamp"
-        ],
+        "displayName": ["Timestamp"],
         "type": 1
       }
     },
     "events": [],
     "lang_error": {
-      "displayName": [
-        "ink",
-        "LangError"
-      ],
+      "displayName": ["ink", "LangError"],
       "type": 7
     },
     "messages": [
@@ -95,10 +75,7 @@
         "mutates": false,
         "payable": false,
         "returnType": {
-          "displayName": [
-            "ink",
-            "MessageResult"
-          ],
+          "displayName": ["ink", "MessageResult"],
           "type": 8
         },
         "selector": "0xdce99eea"
@@ -108,9 +85,7 @@
           {
             "label": "random_number",
             "type": {
-              "displayName": [
-                "u8"
-              ],
+              "displayName": ["u8"],
               "type": 4
             }
           }
@@ -121,10 +96,7 @@
         "mutates": true,
         "payable": true,
         "returnType": {
-          "displayName": [
-            "ink",
-            "MessageResult"
-          ],
+          "displayName": ["ink", "MessageResult"],
           "type": 9
         },
         "selector": "0xfe8486cb"
@@ -137,10 +109,7 @@
         "mutates": false,
         "payable": true,
         "returnType": {
-          "displayName": [
-            "ink",
-            "MessageResult"
-          ],
+          "displayName": ["ink", "MessageResult"],
           "type": 5
         },
         "selector": "0x4818ccc9"
@@ -150,9 +119,7 @@
           {
             "label": "value",
             "type": {
-              "displayName": [
-                "Balance"
-              ],
+              "displayName": ["Balance"],
               "type": 11
             }
           }
@@ -163,10 +130,7 @@
         "mutates": false,
         "payable": false,
         "returnType": {
-          "displayName": [
-            "ink",
-            "MessageResult"
-          ],
+          "displayName": ["ink", "MessageResult"],
           "type": 13
         },
         "selector": "0x2c7f7609"
@@ -176,9 +140,7 @@
           {
             "label": "max_value",
             "type": {
-              "displayName": [
-                "u8"
-              ],
+              "displayName": ["u8"],
               "type": 4
             }
           }
@@ -189,10 +151,7 @@
         "mutates": true,
         "payable": false,
         "returnType": {
-          "displayName": [
-            "ink",
-            "MessageResult"
-          ],
+          "displayName": ["ink", "MessageResult"],
           "type": 15
         },
         "selector": "0x07c79d25"
@@ -205,10 +164,7 @@
         "mutates": true,
         "payable": false,
         "returnType": {
-          "displayName": [
-            "ink",
-            "MessageResult"
-          ],
+          "displayName": ["ink", "MessageResult"],
           "type": 9
         },
         "selector": "0x0c70c1b8"
@@ -218,9 +174,7 @@
           {
             "label": "value",
             "type": {
-              "displayName": [
-                "u128"
-              ],
+              "displayName": ["u128"],
               "type": 11
             }
           }
@@ -231,10 +185,7 @@
         "mutates": false,
         "payable": false,
         "returnType": {
-          "displayName": [
-            "ink",
-            "MessageResult"
-          ],
+          "displayName": ["ink", "MessageResult"],
           "type": 9
         },
         "selector": "0x375a4b1a"
@@ -244,18 +195,14 @@
           {
             "label": "router_addr",
             "type": {
-              "displayName": [
-                "AccountId"
-              ],
+              "displayName": ["AccountId"],
               "type": 2
             }
           },
           {
             "label": "domain",
             "type": {
-              "displayName": [
-                "String"
-              ],
+              "displayName": ["String"],
               "type": 0
             }
           }
@@ -266,10 +213,7 @@
         "mutates": false,
         "payable": false,
         "returnType": {
-          "displayName": [
-            "ink",
-            "MessageResult"
-          ],
+          "displayName": ["ink", "MessageResult"],
           "type": 16
         },
         "selector": "0xa44d778a"
@@ -279,9 +223,7 @@
           {
             "label": "new_owner",
             "type": {
-              "displayName": [
-                "AccountId"
-              ],
+              "displayName": ["AccountId"],
               "type": 2
             }
           }
@@ -292,10 +234,7 @@
         "mutates": true,
         "payable": false,
         "returnType": {
-          "displayName": [
-            "ink",
-            "MessageResult"
-          ],
+          "displayName": ["ink", "MessageResult"],
           "type": 5
         },
         "selector": "0xd7802c49"
@@ -371,11 +310,7 @@
             ]
           }
         },
-        "path": [
-          "ink_primitives",
-          "types",
-          "AccountId"
-        ]
+        "path": ["ink_primitives", "types", "AccountId"]
       }
     },
     {
@@ -434,9 +369,7 @@
             "type": 7
           }
         ],
-        "path": [
-          "Result"
-        ]
+        "path": ["Result"]
       }
     },
     {
@@ -460,10 +393,7 @@
             ]
           }
         },
-        "path": [
-          "ink_primitives",
-          "LangError"
-        ]
+        "path": ["ink_primitives", "LangError"]
       }
     },
     {
@@ -503,9 +433,7 @@
             "type": 7
           }
         ],
-        "path": [
-          "Result"
-        ]
+        "path": ["Result"]
       }
     },
     {
@@ -545,9 +473,7 @@
             "type": 7
           }
         ],
-        "path": [
-          "Result"
-        ]
+        "path": ["Result"]
       }
     },
     {
@@ -587,9 +513,7 @@
             "type": 12
           }
         ],
-        "path": [
-          "Result"
-        ]
+        "path": ["Result"]
       }
     },
     {
@@ -613,12 +537,7 @@
             ]
           }
         },
-        "path": [
-          "moes_coaster",
-          "libs",
-          "errors",
-          "BeerTapErr"
-        ]
+        "path": ["moes_coaster", "libs", "errors", "BeerTapErr"]
       }
     },
     {
@@ -658,9 +577,7 @@
             "type": 7
           }
         ],
-        "path": [
-          "Result"
-        ]
+        "path": ["Result"]
       }
     },
     {
@@ -708,9 +625,7 @@
             "type": 7
           }
         ],
-        "path": [
-          "Result"
-        ]
+        "path": ["Result"]
       }
     },
     {
@@ -750,9 +665,7 @@
             "type": 7
           }
         ],
-        "path": [
-          "Result"
-        ]
+        "path": ["Result"]
       }
     },
     {
@@ -792,9 +705,7 @@
             "type": 18
           }
         ],
-        "path": [
-          "Result"
-        ]
+        "path": ["Result"]
       }
     },
     {
@@ -842,12 +753,7 @@
             ]
           }
         },
-        "path": [
-          "moes_coaster",
-          "libs",
-          "errors",
-          "AznsRouterError"
-        ]
+        "path": ["moes_coaster", "libs", "errors", "AznsRouterError"]
       }
     },
     {
@@ -863,11 +769,7 @@
             ]
           }
         },
-        "path": [
-          "ink_primitives",
-          "types",
-          "Hash"
-        ]
+        "path": ["ink_primitives", "types", "Hash"]
       }
     },
     {
@@ -884,11 +786,7 @@
         "def": {
           "variant": {}
         },
-        "path": [
-          "ink_env",
-          "types",
-          "NoChainExtension"
-        ]
+        "path": ["ink_env", "types", "NoChainExtension"]
       }
     }
   ],

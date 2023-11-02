@@ -71,8 +71,8 @@ const mind = () => {
 
   navigator.mediaDevices
     .enumerateDevices()
-    .then(function(devices) {
-      devices.forEach(function(device) {
+    .then(function (devices) {
+      devices.forEach(function (device) {
         console.log("device", device);
 
         if (device.kind === "videoinput") {
@@ -95,7 +95,7 @@ const mind = () => {
         );
       });
     })
-    .catch(function(err) {
+    .catch(function (err) {
       console.log(err.name + ": " + err.message);
     });
 };

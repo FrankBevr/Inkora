@@ -11,7 +11,7 @@ export const useExampleStore = create((set) => ({
   updateData: (id, name, age, food) =>
     set((store) => {
       const newData = store.data.map((item) =>
-        item.id === id ? { id, name, age, food } : item
+        item.id === id ? { id, name, age, food } : item,
       );
       return { data: newData };
     }),
@@ -21,7 +21,6 @@ export const useExampleStore = create((set) => ({
       return { data: newData };
     }),
 }));
-
 
 export const useViewState = create((set) => ({
   currentIndex: 0,
@@ -34,7 +33,8 @@ export const useViewState = create((set) => ({
     }),
   backward: () =>
     set((state) => {
-      const prevIndex = (state.currentIndex - 1 + state.maxIndex) % state.maxIndex;
+      const prevIndex =
+        (state.currentIndex - 1 + state.maxIndex) % state.maxIndex;
       return { currentIndex: prevIndex };
     }),
 }));
