@@ -30,29 +30,30 @@ const App = () => {
         ) : (
           <ScratchExperience />
         )}
-        <div className="button-container">
-          {
-          /* <p>Current Index: {currentIndex}</p>
+        <div className="button-container-top">
           <PrimaryButton
             label={"Forward"}
             iconLeftVis={true}
+            labelVis={false}
             onClick={() => {
               forward();
             }}
           >
             Forward
           </PrimaryButton>
+        <h3 style={{whiteSpace: 'nowrap', alignSelf: 'center'}}>{currentIndex}</h3>
           <PrimaryButton
             label={"Backward"}
             iconRightVis={true}
+            labelVis={false}
             onClick={() => {
               backward();
             }}
           >
             Backward
           </PrimaryButton>
-        */}
-          {started === null && (
+
+          {/* {started === null && (
             <PrimaryButton
               label={"View Coaster"}
               onClick={() => {
@@ -71,7 +72,7 @@ const App = () => {
             >
               Stop View
             </PrimaryButton>
-          )}
+          )} */}
         </div>
       </UseInkProvider>
       <div className="frame"></div>

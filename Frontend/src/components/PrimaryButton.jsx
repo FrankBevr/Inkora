@@ -1,6 +1,7 @@
 import styles from "./PrimaryButton.module.css";
 const PrimaryButton = ({
   label,
+  labelVis,
   state,
   iconLeftComp,
   iconRightComp,
@@ -41,7 +42,10 @@ const PrimaryButton = ({
           </div>
         )}
 
+        {labelVis && (
         <div className={styles.label}>{label}</div>
+        )
+        }
         {iconRightVis && (
           <div className={styles.rightItem}>
             {iconRightComp || (
