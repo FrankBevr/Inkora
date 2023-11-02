@@ -72,7 +72,7 @@ const App = () => {
               label={"Stop"}
               labelVis={true}
               onClick={() => {
-                setStarted("three");
+                setStarted(null);
               }}
             >
               View Coaster

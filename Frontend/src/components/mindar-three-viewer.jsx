@@ -10,7 +10,7 @@ export default () => {
     const mindarThree = new MindARThree({
       container: containerRef.current,
       imageTargetSrc:
-        "https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.0/examples/image-tracking/assets/card-example/card.mind",
+        "/card.mind",
       uiLoading: false,
       uiScanning: false,
       uiError: false,
