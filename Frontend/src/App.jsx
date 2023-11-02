@@ -5,6 +5,7 @@ import ScratchExperience from "./components/ScratchExperience";
 import { useViewState } from "./store/store"; // import the ViewState store
 import { useState } from "react";
 import PrimaryButton from "./components/PrimaryButton";
+import styles from "./App.module.css";
 
 const LocalChain = {
   ...Custom,
@@ -28,34 +29,37 @@ const App = () => {
         {currentIndex === 0 ? (
           <ArExperience started={started} />
         ) : (
-          <ScratchExperience />
+          <>
+            <ScratchExperience />
+          </>
         )}
-        <div className="button-container-top">
-          <PrimaryButton
-            label={"Forward"}
-            iconLeftVis={true}
-            labelVis={false}
-            onClick={() => {
-              forward();
-            }}
-          >
-            Forward
-          </PrimaryButton>
-        <h3 style={{whiteSpace: 'nowrap', alignSelf: 'center'}}>{currentIndex}</h3>
-          <PrimaryButton
-            label={"Backward"}
-            iconRightVis={true}
-            labelVis={false}
-            onClick={() => {
-              backward();
-            }}
-          >
-            Backward
-          </PrimaryButton>
-
-          {/* {started === null && (
+        <div className={styles.buttonContainerTop}>
+          {currentIndex === 0 && (
+            <PrimaryButton
+              label={"Mushi Lottery"}
+              iconRightVis={true}
+              labelVis={true}
+              onClick={() => {
+                backward();
+              }}
+            ></PrimaryButton>
+          )}
+          {currentIndex === 1 && (
+            <PrimaryButton
+              label={"Back"}
+              iconLeftVis={true}
+              labelVis={true}
+              onClick={() => {
+                backward();
+              }}
+            ></PrimaryButton>
+          )}
+        </div>
+        <div className={styles.buttonContainerBottom}>
+          {started === null && currentIndex === 0 && (
             <PrimaryButton
               label={"View Coaster"}
+              labelVis={true}
               onClick={() => {
                 setStarted("three");
               }}
@@ -63,19 +67,20 @@ const App = () => {
               View Coaster
             </PrimaryButton>
           )}
-          {started !== null && (
+          {started !== null &&  currentIndex === 0 && (
             <PrimaryButton
-              label={"Stop View"}
+              label={"Stop"}
+              labelVis={true}
               onClick={() => {
-                setStarted(null);
+                setStarted("three");
               }}
             >
-              Stop View
+              View Coaster
             </PrimaryButton>
-          )} */}
+          )}
         </div>
       </UseInkProvider>
-      <div className="frame"></div>
+      <div className={styles.frame}></div>
     </>
   );
 };
