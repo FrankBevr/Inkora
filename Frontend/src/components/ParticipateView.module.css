@@ -1,0 +1,5 @@
+.participateViewFlex {
+  gap: 2vh;
+  display: flex;
+  flex-direction: column;
+}
