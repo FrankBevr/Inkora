@@ -1,34 +1,37 @@
 import { useAllWallets, useWallet } from "useink";
+import PrimaryButton from "./PrimaryButton";
+import styles from './SelectWalletView.module.css';
 
 const SelectWalletView = () => {
   const wallets = useAllWallets();
   const { connect } = useWallet();
   return (
-    <ul>
+    <div className={styles.walletViewFlex}>
       {wallets.map((w) => (
-        <li key={w.title} style={{ listStyle: "none" }}>
+        <div key={w.title} >
           {w.installed ? (
-            <button onClick={() => connect(w.extensionName)}>
+            <PrimaryButton iconLeftVis={true} iconLeftComp={
               <img
                 src={w.logo.src}
-                style={{ width: 20, height: 20 }}
+                style={{ width: 24, height: 24 }}
                 alt={w.logo.alt}
               />
-              Connect to {w.title}
-            </button>
+            } labelVis={true} label={`Connect ${w.title}`} onClick={() => connect(w.extensionName)}>
+              
+            </PrimaryButton>
           ) : (
-            <a href={w.installUrl}>
+            <PrimaryButton labelVis={true} label={`Install ${w.title}`} iconLeftVis={true} iconLeftComp={
               <img
                 src={w.logo.src}
-                style={{ width: 20, height: 20 }}
+                style={{ width: 24, height: 24 }}
                 alt={w.logo.alt}
               />
-              Install {w.title}
-            </a>
+            } href={w.installUrl}>
+            </PrimaryButton>
           )}
-        </li>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 };
 
