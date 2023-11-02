@@ -10,7 +10,7 @@ export default () => {
     const mindarThree = new MindARThree({
       container: containerRef.current,
       imageTargetSrc:
-        "/card.mind",
+        "/coaster.mind",
       uiLoading: false,
       uiScanning: false,
       uiError: false,
