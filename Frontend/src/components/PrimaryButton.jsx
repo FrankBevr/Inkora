@@ -7,7 +7,7 @@ const PrimaryButton = ({
   iconRightComp,
   iconLeftVis,
   iconRightVis,
-  ...props 
+  ...props
 }) => {
   /* state is not neccessary currently. State gets regulated thruh css in the imported modules. */
   return (
@@ -42,10 +42,7 @@ const PrimaryButton = ({
           </div>
         )}
 
-        {labelVis && (
-        <div className={styles.label}>{label}</div>
-        )
-        }
+        {labelVis && <div className={styles.label}>{label}</div>}
         {iconRightVis && (
           <div className={styles.rightItem}>
             {iconRightComp || (

@@ -6,8 +6,8 @@
   border-radius: 10px;
   background: var(--white-100);
   border: none;
-  cursor: pointer; 
-  height: 60px; 
+  cursor: pointer;
+  height: 60px;
 }
 
 .default:hover {
@@ -26,7 +26,8 @@
   gap: 20px;
 }
 
-.leftItem, .rightItem {
+.leftItem,
+.rightItem {
   display: flex;
   width: 24px;
   height: 24px;
