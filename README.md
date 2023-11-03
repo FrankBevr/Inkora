@@ -34,10 +34,10 @@ Read the [Idea](https://inkora.surge.sh/Notes/Software-Design.html).
 `./Frontend` contains Frontend Application  
 `./Backend` contains a provisionally Backend  
 `./SmartContract` contains SmartContracts  
-`./3D` contains 3D work
+`./3D` contains 3D work  
 
-`./docs` contains the journey 
-`./playground` contains diverse
+`./docs` contains the journey   
+`./playground` contains diverse  
 
 ### Quickstart
 
