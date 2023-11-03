@@ -6,7 +6,7 @@ import { useViewState } from "./store/store"; // import the ViewState store
 import { useState } from "react";
 import PrimaryButton from "./components/PrimaryButton";
 import styles from "./App.module.css";
-import { AlephTestnet } from 'useink/chains'
+import { AlephTestnet } from "useink/chains";
 
 const LocalChain = {
   ...Custom,
@@ -16,11 +16,9 @@ const LocalChain = {
 };
 
 const App = () => {
-  console.log(AlephTestnet)
   const currentIndex = useViewState((state) => state.currentIndex); // get the currentIndex state
   const forward = useViewState((state) => state.forward); // get the currentIndex state
   const backward = useViewState((state) => state.backward); // get the currentIndex state
-
   const [started, setStarted] = useState(null);
 
   return (
@@ -47,14 +45,16 @@ const App = () => {
             ></PrimaryButton>
           )}
           {currentIndex === 1 && (
-            <PrimaryButton
-              label={"Back"}
-              iconLeftVis={true}
-              labelVis={true}
-              onClick={() => {
-                backward();
-              }}
-            ></PrimaryButton>
+            <>
+              <PrimaryButton
+                label={"Back"}
+                iconLeftVis={true}
+                labelVis={true}
+                onClick={() => {
+                  backward();
+                }}
+              ></PrimaryButton>
+            </>
           )}
         </div>
         <div className={styles.buttonContainerBottom}>

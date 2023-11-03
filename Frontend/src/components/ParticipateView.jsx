@@ -1,9 +1,10 @@
-import { useContract, useTx, useWallet } from "useink";
+import { useContract, useTx, useWallet, useBalance } from "useink";
 import metadata from "../assets/moes_coaster.json";
 import PrimaryButton from "./PrimaryButton";
 import styles from "./ParticipateView.module.css";
 import { SupportedChainId } from "@azns/resolver-core";
 import { useResolveAddressToDomain } from "@azns/resolver-react";
+import BalanceView from "./BalanceView";
 
 const ParticipateView = () => {
   const { account, disconnect } = useWallet();
@@ -13,12 +14,11 @@ const ParticipateView = () => {
   const participate = useTx(contract, "moesCoaster::participateScratchCard");
 
   const scratchIt = async () => {
-    // 100000000000000000
-    try {
-      participate.signAndSend([5], { value: "100000000000000" });
-      console.log("Its clicked")
+    try {                         
+      const bigIntValue = BigInt("10000000000000");
+      participate.signAndSend([5], { value: bigIntValue });
     } catch (e) {
-      console.log(e)
+      console.log(e);
     }
   };
 
@@ -41,6 +41,7 @@ const ParticipateView = () => {
             Disconnect Wallet
           </PrimaryButton>
           <code>{primaryDomain ? primaryDomain : account?.name}</code>
+          <BalanceView />
         </div>
       </div>
     </>
