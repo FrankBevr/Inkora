@@ -11,7 +11,7 @@ hero:
       link: /Beginning/intro
     - theme: alt
       text: See the Moe's Taverne
-      link: /Notes/markdown-examples
+      link: https://moes-taverne.surge.sh
 
 features:
   - title: WebAR
