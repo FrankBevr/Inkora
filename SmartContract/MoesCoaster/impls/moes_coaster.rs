@@ -27,7 +27,7 @@ pub mod moes_coaster {
         #[ink(constructor)]
         pub fn new() -> Self {
             Self {
-                ipfs_link: "ipfs://abc".into(),
+                ipfs_link: "Qme6WpYESqDqbwPSMfAyC6av7Mr6dJwTww9ramAN2zxCvk".into(),
                 salt: 0,
                 owner: Self::env().caller(),
             }
@@ -38,13 +38,15 @@ pub mod moes_coaster {
      * Methods *
      ***********/
     impl crate::traits::moes_coaster::MoesCoaster for MoesCoaster {
-        // Get 3D Model
+        // Get Folder CID which cointains mushroom.obj and mushroom_texture.jpg
         #[ink(message)]
         fn get_ipfs_link(&self) -> String {
             self.ipfs_link.clone()
         }
 
-        //  main function
+        /*****************
+         * Main Function *
+         ****************/
         #[ink(message, payable)]
         fn participate_scratch_card(
             &mut self,
@@ -63,7 +65,50 @@ pub mod moes_coaster {
             }
         }
 
-        // Journey function to transfer money to contract
+        /***********************
+         * Secondary Fucntions *
+         **********************/
+
+        // Changes the owner
+        #[ink(message)]
+        fn change_owner(&mut self, new_owner: AccountId) {
+            if self.owner == self.env().caller() {
+                self.owner = new_owner;
+            }
+        }
+
+        /**********************
+         * Azero ID Implention*
+         *********************/
+
+        /*
+         * Only Implented.
+         * It compiles, but not in use.
+         */
+
+        // It returns the address of a given domain.
+        #[ink(message)]
+        fn get_address(
+            &self,
+            router_addr: AccountId,
+            domain: String,
+        ) -> Result<AccountId, AznsRouterError> {
+            let router: ink::contract_ref!(AznsContract) = router_addr.into();
+
+            router.get_address(domain)
+        }
+
+        /********************
+         * Journey Fucntions *
+         *******************/
+
+        /*
+         * Journey Function are functions.
+         * They chunk down the Main Function.
+         * It decreases complexity.
+         */
+
+        // Transfer money to contract
         #[ink(message, payable)]
         fn feed_me(&self) {
             if self.owner == self.env().caller() {
@@ -71,7 +116,7 @@ pub mod moes_coaster {
             }
         }
 
-        // Journey function to transfer money from contract to caller
+        // Transfer money from contract to caller
         #[ink(message)]
         fn puke_it(&self, value: Balance) -> bool {
             assert!(value <= self.env().balance(), "insufficient funds!");
@@ -79,7 +124,7 @@ pub mod moes_coaster {
             true
         }
 
-        // Journey function create randomness
+        // Create randomness
         #[ink(message)]
         fn generate_random_number(&mut self, max_value: u8) -> u8 {
             let seed = self.env().block_timestamp();
@@ -93,7 +138,25 @@ pub mod moes_coaster {
             number
         }
 
-        // Journey function combine randomness, feeding  and puking
+        // Calcuclation of percentage without using devision
+        #[ink(message)]
+        fn divide_by_100(&self, value: u128) -> Result<u128, self::BeerTapErr> {
+            let high_bits = value >> 64;
+            let low_bits = value & ((1 << 64) - 1);
+            let percentage_value = match high_bits.checked_div(100) {
+                Some(h) => match h.checked_shl(64) {
+                    Some(h_shifted) => match low_bits.checked_div(100) {
+                        Some(l) => h_shifted + l,
+                        None => 0,
+                    },
+                    None => 0,
+                },
+                None => 0,
+            };
+            Ok(percentage_value)
+        }
+
+        // Combines feeding, puking, randomness and percentage
         #[ink(message)]
         fn feed_me_randomly(&mut self) -> Result<u128, self::BeerTapErr> {
             let transfered_food = self.env().transferred_value();
@@ -131,43 +194,6 @@ pub mod moes_coaster {
             // return value of the contract is feeded.
             Ok(contract_food)
         }
-
-        // Journey function to calcuclate percentage without using devision
-        #[ink(message)]
-        fn divide_by_100(&self, value: u128) -> Result<u128, self::BeerTapErr> {
-            let high_bits = value >> 64;
-            let low_bits = value & ((1 << 64) - 1);
-            let percentage_value = match high_bits.checked_div(100) {
-                Some(h) => match h.checked_shl(64) {
-                    Some(h_shifted) => match low_bits.checked_div(100) {
-                        Some(l) => h_shifted + l,
-                        None => 0,
-                    },
-                    None => 0,
-                },
-                None => 0,
-            };
-            Ok(percentage_value)
-        }
-
-        #[ink(message)]
-        fn get_address(
-            &self,
-            router_addr: AccountId,
-            domain: String,
-        ) -> Result<AccountId, AznsRouterError> {
-            // Can also store it in contract storage
-            let router: ink::contract_ref!(AznsContract) = router_addr.into();
-
-            router.get_address(domain)
-        }
-
-        #[ink(message)]
-        fn change_owner(&mut self, new_owner: AccountId) {
-            if self.owner == self.env().caller() {
-                self.owner = new_owner;
-            }
-        }
     }
 
     #[cfg(test)]
@@ -187,31 +213,31 @@ pub mod moes_coaster {
             let moes_coaster = MoesCoaster::new();
             assert_eq!(
                 crate::traits::moes_coaster::MoesCoaster::get_ipfs_link(&moes_coaster),
-                "ipfs://abc"
+                "Qme6WpYESqDqbwPSMfAyC6av7Mr6dJwTww9ramAN2zxCvk"
             );
         }
 
         #[ink::test]
         fn puke_it() {
-            // set up
+            // Set up
             let contract_balance = 100;
             let accounts = default_accounts();
             let moes_coaster = create_contract(contract_balance);
 
-            // when
+            // When
             set_sender(accounts.eve);
             set_balance(accounts.eve, 0);
             crate::traits::moes_coaster::MoesCoaster::puke_it(&moes_coaster, 80);
 
-            // then
+            // Then
             assert_eq!(get_balance(accounts.eve), 80);
         }
 
         #[test]
         fn generate_random_number() {
-            //     let contract_balance = 100;
-            //     let accounts = default_accounts();
-            //     let mut moes_coaster = create_contract(contract_balance);
+            // let contract_balance = 100;
+            // let accounts = default_accounts();
+            // let mut moes_coaster = create_contract(contract_balance);
 
             // 🤔🤔🤔🤔🤔⚠️❓
             // let result = crate::traits::moes_coaster::MoesCoaster::generate_random_number(
