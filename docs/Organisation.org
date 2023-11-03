@@ -331,9 +331,19 @@ CLOCK: [2023-10-26 Thu 18:41]--[2023-10-26 Thu 19:21] =>  0:40
   - [X] make tests work again
   - [X] make fu**ing Btn work
 
-** TODO [#B] Make it nicey [20/26]
+** TODO [#B] Make it nicey [34/40]
 :LOGBOOK:
-CLOCK: [2023-11-01 Wed 23:02]
+CLOCK: [2023-11-03 Fri 09:01]--[2023-11-03 Fri 09:12] =>  0:11
+CLOCK: [2023-11-03 Fri 08:00]--[2023-11-03 Fri 09:01] =>  0:55
+CLOCK: [2023-11-02 Thu 21:03]--[2023-11-02 Thu 23:47] =>  2:44
+CLOCK: [2023-11-02 Thu 19:09]--[2023-11-02 Thu 20:58] =>  1:49
+CLOCK: [2023-11-02 Thu 17:48]--[2023-11-02 Thu 18:36] =>  0:48
+CLOCK: [2023-11-02 Thu 13:54]--[2023-11-02 Thu 14:58] =>  1:04
+CLOCK: [2023-11-02 Thu 09:52]--[2023-11-02 Thu 11:01] =>  1:09
+CLOCK: [2023-11-02 Thu 08:23]--[2023-11-02 Thu 09:28] =>  1:05
+CLOCK: [2023-11-02 Thu 07:40]--[2023-11-02 Thu 08:17] =>  0:37
+CLOCK: [2023-11-02 Thu 07:01]--[2023-11-02 Thu 07:23] =>  0:22
+CLOCK: [2023-11-01 Wed 23:02]--[2023-11-01 Wed 23:21] =>  0:19
 CLOCK: [2023-11-01 Wed 21:06]--[2023-11-01 Wed 21:10] =>  0:04
 CLOCK: [2023-11-01 Wed 19:48]--[2023-11-01 Wed 21:02] =>  1:14
 CLOCK: [2023-11-01 Wed 19:07]--[2023-11-01 Wed 19:42] =>  0:35
@@ -367,7 +377,7 @@ CLOCK: [2023-10-30 Mon 21:24]--[2023-10-30 Mon 21:27] =>  0:03
   - [X] zustand middleware
   - [X] unit tests via vitest
   - [X] advancded Zustand
-- [ ] Find or make Mushroom 3D
+- [X] Find or make Mushroom 3D
 - [ ] Upload Mushroom to ipfs
 - [ ] Copy ipfs hash, paste it in
 - [ ] Test it via terminal
@@ -377,7 +387,7 @@ CLOCK: [2023-10-30 Mon 21:24]--[2023-10-30 Mon 21:27] =>  0:03
 - [X] Styling
   - [X] Get Styles in Order
   - [X] Make Button nicey
-- [ ] Make Video-2
+- [X] Make Video-2
 - [X] Write Monday-2
 - [X] Write Tuesday-2
 - [X] participate in Polka Ambo Call
@@ -394,4 +404,19 @@ CLOCK: [2023-10-30 Mon 21:24]--[2023-10-30 Mon 21:27] =>  0:03
 - [X] center all that stuff, establish kind of clickworflow
 - [X] add css from simplistic desgin system
 - [X] create Button Component
-- [ ] write Wednesday-2.md
+- [X] write Wednesday-2.md
+
+- [X] update selectWallet View
+- [X] update participate Scratch Card
+- [X] almoooost
+- [ ] upload to testnet
+- [ ] make it work via testnet
+- [X] load object correctly
+- [X] participate in call
+- [X] add ipfs scripts
+- [X] got feedback from friend
+- [X] participate in call for menu card
+
+- [X] write thursday-2.md
+- [X] answering mails
+- [X] build & redeploy docs
