@@ -6,6 +6,7 @@ import { useViewState } from "./store/store"; // import the ViewState store
 import { useState } from "react";
 import PrimaryButton from "./components/PrimaryButton";
 import styles from "./App.module.css";
+import { AlephTestnet } from 'useink/chains'
 
 const LocalChain = {
   ...Custom,
@@ -15,6 +16,7 @@ const LocalChain = {
 };
 
 const App = () => {
+  console.log(AlephTestnet)
   const currentIndex = useViewState((state) => state.currentIndex); // get the currentIndex state
   const forward = useViewState((state) => state.forward); // get the currentIndex state
   const backward = useViewState((state) => state.backward); // get the currentIndex state
@@ -24,7 +26,7 @@ const App = () => {
   return (
     <>
       <UseInkProvider
-        config={{ dappName: "MoesTaverne", chains: [LocalChain] }}
+        config={{ dappName: "MoesTaverne", chains: [AlephTestnet] }}
       >
         {currentIndex === 0 ? (
           <ArExperience started={started} />
