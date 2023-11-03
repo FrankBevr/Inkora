@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Check if ipfs is already installed
+if command -v ipfs >/dev/null 2>&1; then
+    # If ipfs is installed, print a blue message
+    echo -e "\033[0;34mIPFS is already installed.\033[0m"
+    exit 0
+fi
+
 # Copied from https://docs.ipfs.tech/install/command-line/#install-official-binary-distributions , wrote by copilot
 
 # Download the tar file
@@ -29,8 +36,14 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+# Set the output color to blue
+tput setaf 4
+
 # Run the install script
 sudo bash install.sh
+
+# Reset the output color
+tput sgr0
 
 # Check if the installation was successful
 if [ $? -ne 0 ]; then
@@ -46,5 +59,3 @@ if [ $? -ne 0 ]; then
   echo "Version check failed. Exiting."
   exit 1
 fi
-
-echo "Installation successful."
