@@ -1,4 +1,31 @@
-# Outlook
+# Outlook 
+
+Deploy on Mainnet and maybe add two Friends more to the Coaster.    
+One is the owner, one is the Barrunner and one is the Barkeeper.    
+Because 2 other friends had birthday.   
+Everyone gets a portion of the played games.   
+Would love to include it and get used to azero thingie in ink.   
+
+But first wait for some solid feedback.  
+
+It was a lot of fun and got a good reason to improve further.  
+One tiny thing after another 🧑‍🦯 ,like always 🦥
+
+🌤️  Thanks for reading.  🌤️
+
+```
+  ____ _                        
+ / ___| |__   ___  ___ _ __ ___ 
+| |   | '_ \ / _ \/ _ \ '__/ __|
+| |___| | | |  __/  __/ |  \__ \
+ \____|_| |_|\___|\___|_|  |___/
+
+```
+
+
+:::details
+
+## Before Submission Outlook
 
 The outlook stars now.
 
@@ -19,3 +46,5 @@ Its so close. 🧑‍🏭
 Thanks for reading, I looking thruh this Journey.  
 
 **I appreciate it** 👍 
+
+:::

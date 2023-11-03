@@ -252,7 +252,7 @@ CLOCK: [2023-10-24 Tue 09:14]--[2023-10-24 Tue 10:21] =>  1:07
 - [X] Add User Interace
 - [X] Complete Ui Things
 
-** DONE [#A] Smart Contract Work & Diverse [12/12]
+** TODO [#A] Smart Contract Work & Diverse [12/12]
 :LOGBOOK:
 CLOCK: [2023-10-30 Mon 20:26]--[2023-10-30 Mon 21:22] =>  0:56
 CLOCK: [2023-10-30 Mon 18:05]--[2023-10-30 Mon 19:48] =>  1:43
@@ -331,8 +331,19 @@ CLOCK: [2023-10-26 Thu 18:41]--[2023-10-26 Thu 19:21] =>  0:40
   - [X] make tests work again
   - [X] make fu**ing Btn work
 
-** TODO [#B] Make it nicey [34/40]
+** DONE [#B] Make it nicey [57/57]
 :LOGBOOK:
+CLOCK: [2023-11-03 Fri 23:28]--[2023-11-04 Sat 00:38] =>  1:10
+CLOCK: [2023-11-03 Fri 22:04]--[2023-11-03 Fri 22:54] =>  0:50
+CLOCK: [2023-11-03 Fri 21:10]--[2023-11-03 Fri 22:04] =>  0:54
+CLOCK: [2023-11-03 Fri 18:43]--[2023-11-03 Fri 19:34] =>  0:51
+CLOCK: [2023-11-03 Fri 16:58]--[2023-11-03 Fri 17:49] =>  0:51
+CLOCK: [2023-11-03 Fri 16:02]--[2023-11-03 Fri 16:53] =>  0:51
+CLOCK: [2023-11-03 Fri 11:01]--[2023-11-03 Fri 13:08] =>  2:07 
+CLOCK: [2023-11-03 Fri 10:30]--[2023-11-03 Fri 10:52] =>  0:22
+CLOCK: [2023-11-03 Fri 10:01]--[2023-11-03 Fri 10:24] =>  0:23
+CLOCK: [2023-11-03 Fri 09:43]--[2023-11-03 Fri 10:01] =>  0:18
+CLOCK: [2023-11-03 Fri 09:23]--[2023-11-03 Fri 09:43] =>  0:20
 CLOCK: [2023-11-03 Fri 09:01]--[2023-11-03 Fri 09:12] =>  0:11
 CLOCK: [2023-11-03 Fri 08:00]--[2023-11-03 Fri 09:01] =>  0:55
 CLOCK: [2023-11-02 Thu 21:03]--[2023-11-02 Thu 23:47] =>  2:44
@@ -378,12 +389,12 @@ CLOCK: [2023-10-30 Mon 21:24]--[2023-10-30 Mon 21:27] =>  0:03
   - [X] unit tests via vitest
   - [X] advancded Zustand
 - [X] Find or make Mushroom 3D
-- [ ] Upload Mushroom to ipfs
-- [ ] Copy ipfs hash, paste it in
-- [ ] Test it via terminal
-- [ ] Increase Functionality moes-taverne.azero
-  - [ ] Get message via azns router
-  - [ ] ...
+- [X] Upload Mushroom to ipfs
+- [X] Copy ipfs hash, paste it in
+- [X] Test it via terminal
+- [X] Increase Functionality moes-taverne.azero
+  - [X] Get message via azns router
+  - [X] Deciding that i will not go further ^^
 - [X] Styling
   - [X] Get Styles in Order
   - [X] Make Button nicey
@@ -409,8 +420,8 @@ CLOCK: [2023-10-30 Mon 21:24]--[2023-10-30 Mon 21:27] =>  0:03
 - [X] update selectWallet View
 - [X] update participate Scratch Card
 - [X] almoooost
-- [ ] upload to testnet
-- [ ] make it work via testnet
+- [X] upload to testnet
+- [X] make it work via testnet
 - [X] load object correctly
 - [X] participate in call
 - [X] add ipfs scripts
@@ -420,3 +431,21 @@ CLOCK: [2023-10-30 Mon 21:24]--[2023-10-30 Mon 21:27] =>  0:03
 - [X] write thursday-2.md
 - [X] answering mails
 - [X] build & redeploy docs
+
+- [X] update ./install.sh
+- [X] add ipfs to contract
+- [X] add readability
+- [X] upload flipper to test net
+- [X] call
+- [X] get azero testnet id
+- [X] deploy on testnet
+- [X] change frontend to make it work with testnet
+- [X] deploy frontend it via surge.sh
+- [X] test it via subwallet
+- [X] add balance
+- [X] clean it up
+- [X] redeploy everything
+- [X] make a video
+- [X] Rewrite the README.md
+- [X] Rewrite Outlook.md
+- [X] DONE 🚀

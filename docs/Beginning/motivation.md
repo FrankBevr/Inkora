@@ -2,7 +2,6 @@
 
 Inkora is a little project, which allows me to teach myself to stick different kind of technologies together.
 
-
 ### Goal 
 
 My personal Goal was to combine 
@@ -30,7 +29,6 @@ Mori had Birthday so I came up with a Beercoaster. Its simple.
 Quickly, I scratched out in my usual style.  
 
 See the Document [here](/Notes/Software-Design.md)
-
 
 ### Lets see how it goes 🧑‍🏭
 
