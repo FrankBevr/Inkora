@@ -1,7 +1,7 @@
 repo_name: FrankBevr/Inkora
-report_id: 604a5e5c44e6fc18b5cf62bc60351988
+report_id: 4098692c9bd86fbc21beb92cac621f8f
 repo_type: Public
-timestamp: '2023-11-10T17:54:17+00:00'
+timestamp: '2023-11-10T17:54:18+00:00'
 requested_by: FrankBevr
 provider: github
 branch: main
@@ -141,7 +141,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
-  detection_source: playground/Zustand/package.json
+  detection_source: playground/reacto/package.json
   last_updated_by: FrankBevr
   last_updated_on: 2023-10-31 08:14:28.000000000 Z
 - name: three.js
